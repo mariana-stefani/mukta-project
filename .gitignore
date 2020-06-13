@@ -1,0 +1,8 @@
+*.sqlite3
+Pipfile
+Pipfile.lock
+env.py
+*.pyc
+__pycache__
+db.sqlite3
+.vscode
