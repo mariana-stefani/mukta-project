@@ -2,10 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background: url('/media/yoga1.jpg') no-repeat top fixed;
-}
-
 .icon {
     align-items: center;
     display: inline-flex;
@@ -21,4 +17,15 @@ a {
 
 .dropdown-menu {
     background-color: transparent;
+}
+.navbar {
+    background-color: transparent;
+}
+
+.bg-img {
+    margin-top: -190px;
+}
+
+.img-fluid {
+    height: 80vh;
 }
