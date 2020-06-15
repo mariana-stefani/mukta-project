@@ -1,0 +1,18 @@
+[
+    {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "accessories",
+        "friendly_name": "Yoga Accessories"
+      }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+          "name": "wellbeing",
+          "friendly_name": "Wellbeing"
+        }
+      }
+]
