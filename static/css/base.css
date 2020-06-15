@@ -14,3 +14,7 @@ body {
     width: 1.5rem;
     color: black !important;
 }
+
+a {
+    color: black !important;
+}
