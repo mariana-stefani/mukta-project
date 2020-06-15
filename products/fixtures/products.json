@@ -65,7 +65,7 @@
     }
   },
   {
-    "pk": 5,
+    "pk": 6,
     "model": "products.product",
     "fields": {
       "sku": "my2002640149",
