@@ -1,0 +1,80 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "my2002640144",
+      "name": "Yoga Bin Bag",
+      "description": "Nice yoga bin bag",
+      "price": 16.24,
+      "category": 1,
+      "image_url":"https://iili.io/JrTwSn.jpg",
+      "image": "bin-bag.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "my2002640145",
+      "name": "Yoga Ball",
+      "description": "Nice yoga ball",
+      "price": 22.74,
+      "category": 1,
+      "image_url":"https://iili.io/JrTjcX.jpg",
+      "image": "yoga-ball.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "my2002640146",
+      "name": "Yoga Brick",
+      "description": "Nice yoga brick",
+      "price": 8.00,
+      "category": 1,
+      "image_url":"https://iili.io/JrThFt.jpg",
+      "image": "yoga-brick.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "my2002640147",
+      "name": "Yoga Mat",
+      "description": "Nice yoga mat",
+      "price": 16.50,
+      "category": 1,
+      "image_url":"https://iili.io/JrTO9s.jpg",
+      "image": "yoga-mat.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "my2002640148",
+      "name": "Palo Santo and White Sage",
+      "description": "Nice Palo Santo and White Sage",
+      "price": 9.50,
+      "category": 2,
+      "image_url":"https://iili.io/JrTVMN.jpg",
+      "image": "palo-santo.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "my2002640149",
+      "name": "Tibetan Bowl",
+      "description": "Nice tibetan bowl",
+      "price": 34.00,
+      "category": 2,
+      "image_url":"https://iili.io/JrTMnp.jpg",
+      "image": "tibetan-bowl.jpg"
+    }
+  }
+]
