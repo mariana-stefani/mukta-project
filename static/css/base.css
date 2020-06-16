@@ -24,8 +24,12 @@ a {
 
 .bg-img {
     margin-top: -190px;
+    height: 80vh
 }
 
-.img-fluid {
-    height: 80vh;
+
+/* Products */
+
+.card-img-top {
+    height: 300px;
 }
