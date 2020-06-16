@@ -11,10 +11,6 @@ html {
     color: black !important;
 }
 
-a {
-    color: black !important;
-}
-
 .dropdown-menu {
     background-color: transparent;
 }
@@ -27,9 +23,21 @@ a {
     height: 80vh
 }
 
+.nav-link {
+    color: white !important;
+    font-weight: 700;
+}
 
+.main-nav {
+    font-size: 21px;
+    margin: 50px 20px 0 20px;
+}
 /* Products */
 
 .card-img-top {
     height: 300px;
+}
+
+.mobile-nav {
+    padding: 10px;
 }
