@@ -12,9 +12,9 @@
                 Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="products-link">
-                <a href="" class="dropdown-item">Yoga Accessories</a>
-                <a href="" class="dropdown-item">Wellbeing</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Yoga Accessories</a>
+                <a href="{% url 'products' %}?category=wellbeing" class="dropdown-item">Wellbeing</a>
+                <a href="{% url 'products' %}?category=accessories,wellbeing" class="dropdown-item">All Products</a>
             </div>
         </li>
 
