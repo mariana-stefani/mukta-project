@@ -5,6 +5,20 @@
     <section class="callout-container">
         <img src="/media/yoga1.jpg" class="bg-img img-fluid" alt="Mukta Yoga and Wellbeing">
     </section>
+    {% if messages %} 
+    {% for message in messages %}
+        <div aria-live="polite" aria-atomic="true" class=" d-flex justify-content-center align-items-center">
+            <div class="msg-container red-msg" role="alert" aria-live="assertive" data-delay="4500" aria-atomic="true">
+                <div class="red-msg-i">
+                    <i class="far fa-times-circle fa-4x animated rotateIn"></i>
+                </div>
+                <div class="msg-body red-msg-body">
+                    {{ message }}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    {% endif %}
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
