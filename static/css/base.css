@@ -1,42 +1,72 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: absolute;
+  z-index: 1;
 }
 
 .icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
-    color: black !important;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  color: black !important;
 }
 
 .dropdown-menu {
-    background-color: transparent;
+  background-color: transparent;
 }
 .navbar {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .bg-img {
-    margin-top: -190px;
-    height: 80vh;
+  height: 70vh;
+  width: fit-content;
 }
 
 .nav-link {
-    color: white !important;
-    font-weight: 700;
+  color: white !important;
+  font-weight: 700;
+}
+
+#main-nav {
+  font-size: 21px;
+  margin-top: 80px;
 }
 
 .main-nav {
-    font-size: 21px;
+  margin: 0 20px;
 }
+
+.navbar-light .navbar-toggler {
+  background-color: white !important;
+}
+
+.dropdown-item {
+  color: white;
+}
+
 /* Products */
 
 .card-img-top {
-    height: 300px;
+  height: 300px;
 }
 
 .mobile-nav {
-    padding: 10px;
+  padding: 10px;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 992px) {
+  .nav-active {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: solid white;
+  }
 }
