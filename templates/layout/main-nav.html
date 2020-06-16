@@ -5,10 +5,15 @@
                 Events
             </a>
         </li>
-        <li class="nav-item">
-            <a class="main-nav nav-link" href="{% url 'products' %}" id="products-link" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item dropdown">
+            <a class="main-nav nav-link" href="{% url 'products' %}" id="products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Products
             </a>
+            <div class="dropdown-menu border-0" aria-labelledby="products-link">
+                <a href="" class="dropdown-item">Yoga Accessories</a>
+                <a href="" class="dropdown-item">Wellbeing</a>
+                <a href="" class="dropdown-item">All Products</a>
+            </div>
         </li>
 
         <li class="nav-item">
