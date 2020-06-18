@@ -60,6 +60,11 @@ header {
   padding: 10px;
 }
 
+.delivery {
+  background-color: black;
+  color: white;
+}
+
 /* Media queries */
 
 @media screen and (min-width: 992px) {
