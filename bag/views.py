@@ -36,28 +36,26 @@ def add_to_bag(request, item_id):
     request.session['bag'] = bag
     return redirect(redirect_url)
 
-
 def adjust_bag(request, item_id):
+    """ Adjust the quantity of the specified product to the specified amount """
 
-""" Adjust the quantity of the specified product to the specified amount """
+    quantity = int(request.POST.get('quantity'))
+    colour = None
+    if 'product_colour' in request.POST:
+        colour = request.POST['product_colour']
+    bag = request.session.get('bag', {})
 
-quantity = int(request.POST.get('quantity'))
-colour = None
-if 'product_colour' in request.POST:
-    colour = request.POST['product_colour']
-bag = request.session.get('bag', {})
-
-if colour:
     if colour:
-        if quantity > 0:
-            bag[item_id]['items_by_colour'][colour] = quantity
-        else:
-            del bag[item_id]['items_by_colour'][colour] = quantity
-else:
-    if quantity > 0:
-        bag[item_id] = quantity
+        if colour:
+            if quantity > 0:
+                bag[item_id]['items_by_colour'][colour] = quantity
+            else:
+                del bag[item_id]['items_by_colour'][colour]
     else:
-        bag.pop[item_id]
+        if quantity > 0:
+            bag[item_id] = quantity
+        else:
+            bag.pop[item_id]
 
-request.session['bag'] = bag
-return redirect(reverse('view_bag'))
+    request.session['bag'] = bag
+    return redirect(reverse('view_bag'))
