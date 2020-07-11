@@ -65,13 +65,13 @@
                                                             </button>
                                                         </div>
                                                         {% if item.product.has_option %}
-                                                            <input type="hidden" name="product_colour" value="{{ item.colour }}"
+                                                            <input type="hidden" name="product_colour" value="{{ item.colour }}">
                                                         {% endif %}
                                                     </div>
                                                 </div>
                                             </form>
                                             <a class="update-link text-info"><small>Update</small></a>
-                                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size="{{ item.colour }}"><small>Remove</small></a>
+                                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_colour="{{ item.colour }}"><small>Remove</small></a>
                                         </td>
                                         <td class="py-3">
                                             <p class="my-0">{{ item.product.price }}</p>
@@ -137,14 +137,14 @@
     $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
-        var colour = $(this).data('colour');
-        var url = `/bag/remove/${itemId}`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'colour':colour};
+        var colour = $(this).data('product_colour');
+        var url = `/bag/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'product_colour': colour};
 
         $.post(url, data)
          .done(function() {
              location.reload();
-         })
+         });
 
     })
 </script>
