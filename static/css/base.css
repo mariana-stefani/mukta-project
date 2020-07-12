@@ -7,6 +7,10 @@ header {
   z-index: 1;
 }
 
+.text-black {
+  color: #000 !important;
+}
+
 .icon {
   align-items: center;
   display: inline-flex;
