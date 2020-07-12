@@ -11,6 +11,11 @@ header {
   color: #000 !important;
 }
 
+.btn-black {
+  background: black;
+  color: white;
+}
+
 .icon {
   align-items: center;
   display: inline-flex;
