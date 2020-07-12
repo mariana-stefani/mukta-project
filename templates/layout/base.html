@@ -15,6 +15,14 @@
     <title>Mukta Yoga and Wellbeing</title>
   </head>
   <body>
+    {% if messages %}
+      <div class="message-container">
+        {% for message in messages %}
+          {% include 'templates/includes/toast/toast_success.html' %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
     <header class="container-fluid">
       <!-- Navbar -->
       {% include 'navbar.html' %}
@@ -30,6 +38,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
     {% block postloadjs %}
+    <script type="text/javascript">
+      $('.toast').toast('show');
+    </script>
     {% endblock postloadjs %}
   </body>
 </html>
