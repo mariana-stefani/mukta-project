@@ -52,7 +52,7 @@ class Order(models.Model):
         Override the original save method to set the order number
         if it hasn't been set already
         """
-        if nor self.order_number:
+        if not self.order_number:
             self.order_number = self._generate_order_number()
         super().save(*args, **kwargs)
 
