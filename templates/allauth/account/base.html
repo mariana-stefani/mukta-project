@@ -1,1 +1,17 @@
 {% extends "base.html" %}
+
+{% block content %}
+    <div class="container header-container">
+        <section class="callout-container">
+            <img src="/media/yoga1.jpg" class="bg-img img-fluid" alt="Mukta Yoga and Wellbeing">
+        </section>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="allauth-form-inner-content">
+                    {% block inner_content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
