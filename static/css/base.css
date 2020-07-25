@@ -11,6 +11,10 @@ header {
   color: #000 !important;
 }
 
+.border-black {
+  border: 1px solid black !important;
+}
+
 .btn-black {
   background: black;
   color: white;
