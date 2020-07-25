@@ -16,6 +16,12 @@ header {
   color: white;
 }
 
+.btn-outline-black {
+  background: white;
+  color: black !important; /* use important to override link colors for <a> elements */
+  border: 1px solid black;
+}
+
 .btn.btn-outline-black.rounded-0,
 .btn.btn-black.rounded-0 {
   padding: 0.375rem 0.375rem;
