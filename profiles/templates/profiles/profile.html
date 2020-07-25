@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+{% endblock extra_css %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock page_header %}
+
+{% block content %}
+    <section class="callout-container">
+        <img src="/media/yoga1.jpg" class="bg-img img-fluid" alt="Mukta Yoga and Wellbeing">
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h2 class="logo-font mb-4">My Profile</h2>
+                <hr>
+            </div>
+        </div>
+{% endblock content %}
