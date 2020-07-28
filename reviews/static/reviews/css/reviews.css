@@ -1,6 +1,15 @@
 .reviews-container {
-    border: lavender solid 5px;
-    margin: 30px;
-    width: 40%;
-    align-items: center;
+  background: lavenderblush;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: lavender solid 5px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 50%;
 }
+
+.title-divider {
+    padding-bottom: 1px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #e3e3e3
+  }
