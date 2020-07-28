@@ -15,7 +15,7 @@
             <div class="col">
                 <h2 class="title-divider">{{ review.title }}</h2>
                 <p>{{ review.content }}</p>
-                <p class="text-muted">By {{ review.user }} {%if review.friendly_name %} ({{ review.friendly_name }}) on {{ review.date_posted}}{% else %}on {{ review.date_posted}}{% endif %}</p>
+                <p class="text-muted">By {{ review.user }} {%if review.friendly_name %} ({{ review.friendly_name }}) on {{ review.date_posted|date:"F d, Y" }}{% else %}on {{ review.date_posted}}{% endif %}</p>
             </div>
         </div>
     </div>
