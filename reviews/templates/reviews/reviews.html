@@ -10,12 +10,12 @@
     <img src="/media/yoga1.jpg" class="bg-img img-fluid" alt="Mukta Yoga and Wellbeing">
 </section>
 {% for post in posts %}
-    <div class="container reviews-container">
+    <div class="reviews-container container">
         <div class="row">
-            <div class="col-6">
-                <h2>{{ post.title }}</h2>
+            <div class="col">
+                <h2 class="title-divider">{{ post.title }}</h2>
                 <p>{{ post.content }}</p>
-                <p>By {{ post.username }} on {{ post.date_posted}}</p>
+                <p class="text-muted">By {{ post.username }} on {{ post.date_posted}}</p>
             </div>
         </div>
     </div>
