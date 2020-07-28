@@ -1,50 +1,24 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'reviews/css/reviews.css' %}">
+{% endblock extra_css %}
+
 {% block content %}
 <section class="callout-container">
     <img src="/media/yoga1.jpg" class="bg-img img-fluid" alt="Mukta Yoga and Wellbeing">
 </section>
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">        
-        <div class="carousel-inner">
-            {% for post in posts|slice:":3" %}
-                {% if forloop.first %}
-                    <div class="active carousel-item">
-                {% else %}
-                    <div class="carousel-item">
-                {% endif %}
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <h2>{{ post.title }}</h2>
-                                    <p>{{ post.content }}</p>
-                                    <p>By {{ post.username }} on {{ post.date_posted}}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            {% endfor %}
+{% for post in posts %}
+    <div class="container reviews-container">
+        <div class="row">
+            <div class="col-6">
+                <h2>{{ post.title }}</h2>
+                <p>{{ post.content }}</p>
+                <p>By {{ post.username }} on {{ post.date_posted}}</p>
+            </div>
         </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
+{% endfor %}
 {% endblock content %}
 
-{% block postloadjs %}
-    <script>
-        $('.carousel').carousel()
-    </script>
-{% endblock postloadjs %}
