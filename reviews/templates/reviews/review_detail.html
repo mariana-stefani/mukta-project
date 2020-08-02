@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'reviews/css/reviews.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<section class="callout-container">
+    <img src="/media/yoga1.jpg" class="bg-img img-fluid" alt="Mukta Yoga and Wellbeing">
+</section>
+<div class="reviews-container container">
+    <div class="row">
+        <div class="col">
+            <h2 class="title-divider review-title">{{ object.title }}</h2>
+            <p>{{ object.content }}</p>
+            <p class="text-muted">By {{ object.user }} on {{ object.date_posted|date:"F d, Y" }}</p>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
