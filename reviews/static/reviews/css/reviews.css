@@ -13,3 +13,14 @@
     margin-bottom: 14px;
     border-bottom: 1px solid #e3e3e3
   }
+
+
+  .review-title {
+    color: #444444;
+  }
+  
+  a.review-title:hover {
+    color: #428bca;
+    text-decoration: none;
+  }
+  
