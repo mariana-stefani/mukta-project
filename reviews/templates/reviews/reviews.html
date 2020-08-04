@@ -16,7 +16,10 @@
                 <h2><a class="title-divider review-title" href="{% url 'review-detail' review.id %}">{{ review.title }}</a></h2>
                 <p>{{ review.content }}</p>
                 <p class="text-muted">By {{ review.user }} {%if review.friendly_name %} ({{ review.friendly_name }}) on {{ review.date_posted|date:"F d, Y" }}{% else %}on {{ review.date_posted}}{% endif %}</p>
-                <a class="btn btn-outline-info" href="{% url 'review-update' review.id %}">Update</a>
+                {% if user == review.user %}
+                    <a class="btn btn-outline-info" href="{% url 'review-update' review.id %}">Update</a>
+                {% else %}
+                {% endif %}
             </div>
         </div>
     </div>
