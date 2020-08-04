@@ -23,4 +23,10 @@
     color: #428bca;
     text-decoration: none;
   }
-  
+
+  /* Create Review */
+
+  .add-review-btn {
+    text-align: center;
+    margin-top: 30px;
+  }
