@@ -16,12 +16,11 @@ class ReviewListView(ListView):
 class ReviewCreateView(LoginRequiredMixin, CreateView):
     model = Review
     fields = ['title', 'content']
+    success_url = '/reviews'
 
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super().form_valid(form)
-
-        return ('reviews')
 
 
 class ReviewDetailView(DetailView):
@@ -47,9 +46,11 @@ class ReviewUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
 class ReviewDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Review
+    success_url = '/reviews'
 
     def test_func(self):
         review = self.get_object()
         if self.request.user == review.user:
             return True
         return False
+        
