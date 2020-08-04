@@ -1,11 +1,5 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item">
-            <div class="nav-active"></div>
-            <a class="main-nav nav-link" href="#" id="events-link" aria-haspopup="true" aria-expanded="false">
-                Events
-            </a>
-        </li>
         <li class="nav-item dropdown">
             <div class="nav-active"></div>
             <a class="main-nav nav-link" href="{% url 'products' %}" id="products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -18,10 +12,20 @@
             </div>
         </li>
 
+        {% if user.is_authenticated %}
+            <li class="nav-item">
+                <div class="nav-active"></div>
+                <a class="main-nav nav-link" href="#" id="events-link" aria-haspopup="true" aria-expanded="false">
+                    Events
+                </a>
+            </li>
+        {% else %}
+        {% endif %}
+
         <li class="nav-item">
             <div class="nav-active"></div>
-            <a class="main-nav nav-link" href="#" id="mantras-link" aria-haspopup="true" aria-expanded="false">
-                Mantras
+            <a class="main-nav nav-link" href="{% url 'reviews' %}" id="reviews-link" aria-haspopup="true" aria-expanded="false">
+                Reviews
             </a>
         </li>
 
