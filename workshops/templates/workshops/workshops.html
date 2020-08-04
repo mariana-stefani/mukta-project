@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    
+{% endblock extra_css %}
+
+{% block content %}
+<section class="callout-container">
+    <img src="/media/yoga1.jpg" class="bg-img img-fluid" alt="Mukta Yoga and Wellbeing">
+</section>
+{% for event in events %}
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <h3 class="title-divider">{{ event.title }}</h3>
+                <h4>{{ event.content }}</h4>
+                <p>{{ event.date }}</p>
+                <p>{{ event.time }}</p>
+                <p>{{ event.location }}</p>
+                <p>{{ event.instructor }}</p>
+                <img class="w-25 mb-5" src="{{event.images}}">
+            </div>
+        </div>
+    </div>
+{% endfor %}
+{% endblock content %}
+
