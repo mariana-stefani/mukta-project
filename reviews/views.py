@@ -53,4 +53,10 @@ class ReviewDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         if self.request.user == review.user:
             return True
         return False
-        
+
+
+class ReviewUserView(ListView):
+    model = Review
+    context_object_name = 'reviews'
+    template_name = 'reviews/user-reviews.html'
+    ordering = ['-date_posted']
