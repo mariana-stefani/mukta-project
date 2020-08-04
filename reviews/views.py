@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import ListView, CreateView, DetailView, UpdateView
 from .models import Review
 
@@ -28,7 +28,7 @@ class ReviewDetailView(DetailView):
     model = Review
 
 
-class ReviewUpdateView(LoginRequiredMixin, UpdateView):
+class ReviewUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Review
     fields = ['title', 'content']
 
@@ -37,3 +37,9 @@ class ReviewUpdateView(LoginRequiredMixin, UpdateView):
         return super().form_valid(form)
 
         return ('reviews')
+
+    def test_func(self):
+        review = self.get_object()
+        if self.request.user == review.user:
+            return True
+        return False
