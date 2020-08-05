@@ -35,3 +35,23 @@ As an admin user:
 - I expect to provide users with a safe and secure e-commerce platform.
 - I expect to encourage users to register on the site, so they will have access to the best yoga and wellbeing workshops taking place in London.
 - I need to be able to attract attention to my products.
+
+## User Requirements and Expectations:
+
+**Requirements:**
+
+- Navigate through the pages of the website intuitively.
+- The content displayed in a visually appealing manner.
+- Navigate the website on any device.
+- Add products to the shopping cart and update the basket amounts.
+- Buy items in the shopping cart in a safely and securely.
+- View past orders and user details on my profile section.
+
+**Expectations:**
+
+- Navigation takes the user directly to the desired page of the website.
+- The users' payment data will not be kept in the website's database.
+- The website will guarantee the safe storage of user details.
+- The website will have intuitive navigation.
+- The website will have a responsive design.
+- Content is well presented and visually satisfying.
