@@ -55,3 +55,29 @@ As an admin user:
 - The website will have intuitive navigation.
 - The website will have a responsive design.
 - Content is well presented and visually satisfying.
+
+## Wireframes
+
+The wireframes for this project were created at [Moqups](https://moqups.com/).
+View my wireframes [here](#).
+
+## Features
+
+### Existing Features
+
+- Users can create an account, log in, view past orders and have access to the workshops page.
+- A 'my profile' section where users can see previous purchases and update their details.
+- Users can create, update or delete a review when logged in.
+- A 'reviews' page where users can read other users reviews.
+- A 'my reviews' page where users can create, edit, delete a review as well as read their past reviews.
+- A search bar that displays the website products based on the users' search query.
+- A products page where users can click on the item and will be directed to the product details page.
+- A shopping cart where users can add the products they would like to purchase and update their quantities.
+- A 'checkout' page where users can pay for their chosen items using the Stripe API which will process the payment details and place their order.
+
+### Features Left to implement
+
+- Add more products.
+- Create a 'contact us' form.
+- Users can register with their social media accounts.
+- A reset password link.
