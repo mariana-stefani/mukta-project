@@ -18,3 +18,20 @@ Users will have the possibility to register on the website, choose products in t
 - Choose what yoga and wellbeing products I'd like to buy, add them to the shopping cart and pay.
 - Find yoga and wellbeing classes or workshops that are happening in the city of London.
 - Be able to write, edit and delete a review about my experience with my purchase/ website navigation/ workshops I have attended.
+
+#### **User Stories:**
+
+- As a user, I expect to browse what products the website offers.
+- As a user, I expect to find the product I'm looking for, add it to the shopping bag and pay for it. All with intuitive navigation.
+- As a user, I expect to be able to register to the website so it will keep my details for future purchases as well as be able to check my previous purchases.
+- As a user, I expect to be able to leave a review regarding the product I have purchased or about the website or about a workshop I had been to. Also, I want to be able to edit or delete this review.
+- As a user, I expect to find the best workshops and events about yoga or wellbeing happening in London.
+
+#### **Site Owner Goals:**
+
+As an admin user:
+
+- I expect to be able to log in as a superuser and create, update and delete workshops and events on the website.
+- I expect to provide users with a safe and secure e-commerce platform.
+- I expect to encourage users to register on the site, so they will have access to the best yoga and wellbeing workshops taking place in London.
+- I need to be able to attract attention to my products.
