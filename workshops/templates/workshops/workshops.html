@@ -13,7 +13,7 @@
     <div class="container text-center">
         <div class="row">
             <div class="col">
-                <h3 class="title-divider">{{ workshop.title }}</h3>
+                <h2><a class="title-divider" href="{% url 'workshop-detail' workshop.id %}">{{ workshop.title }}</a></h2>
                 <h4>{{ workshop.content }}</h4>
                 <p>{{ workshop.date|date:"D, d F o" }}</p>
                 <p>{{ workshop.time }}</p>
