@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Workshop
 
 # Create your views here.
 
@@ -29,6 +29,6 @@ events = [
 
 def workshops(request):
     context = {
-        'events': events
+        'workshops': Workshop.objects.all()
     }
     return render(request, 'workshops/workshops.html', context)
