@@ -81,3 +81,46 @@ View my wireframes [here](#).
 - Create a 'contact us' form.
 - Users can register with their social media accounts.
 - A reset password link.
+
+## Information Architecture
+
+### Database Choice:
+
+- During development of this project I worked with the standard **sqlite3** database that comes installed with Django.
+- In the production version of Mukta - Yoga and Wellbeing, the database is a **PostgreSQL** database, hosted and provided by **Heroku**.
+
+### Collections Data Structure
+
+## Technologies Used
+
+The technologies used were:
+
+### Languages
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [JSON](https://www.json.org/json-en.html)
+- [Python](https://www.python.org/)
+
+### Libraries
+
+- [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+- [Django](https://www.djangoproject.com/)
+- [Font Awesome](https://fontawesome.com/icons)
+- [Google Fonts](https://fonts.google.com/)
+- [JQuery](https://jquery.com)
+- [Psycopg2](https://pypi.org/project/psycopg2/)
+- [Stripe](https://stripe.com/gb)
+
+### Tools
+
+- [Git](https://github.com/)
+- [Heroku](http://www.heroku.com)
+- [Moqups](https://moqups.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+
+### Databases:
+
+- [PostgreSQL - Production](https://www.postgresql.org/)
+- [SQlite3 - Development](https://www.sqlite.org/index.html)
