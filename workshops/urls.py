@@ -1,6 +1,8 @@
 from django.urls import path
+from django.contrib.auth.decorators import login_required
+from .views import WorkshopListView
 from . import views
 
 urlpatterns = [
-    path('', views.workshops, name='workshops'),
+    path('', login_required(WorkshopListView.as_view()), name='workshops'),
 ]
