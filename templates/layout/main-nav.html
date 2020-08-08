@@ -15,8 +15,8 @@
         {% if user.is_authenticated %}
             <li class="nav-item">
                 <div class="nav-active"></div>
-                <a class="main-nav nav-link" href="#" id="events-link" aria-haspopup="true" aria-expanded="false">
-                    Events
+                <a class="main-nav nav-link" href="{% url 'workshops' %}" id="workshops-link" aria-haspopup="true" aria-expanded="false">
+                    Workshops
                 </a>
             </li>
         {% else %}
