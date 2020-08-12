@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.mixins import UserPassesTestMixin
-from django.views.generic import ListView, DetailView, CreateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Workshop
 
 # Create your views here.
@@ -26,8 +26,27 @@ class WorkshopCreateView(UserPassesTestMixin, CreateView):
               'time', 'instructor', 'content', 'images']
     success_url = '/workshops'
 
-    def form_valid(self, form):
-        return super().form_valid(form)
+    def test_func(self):
+        return self.request.user.is_superuser
+
+
+class WorkshopUpdateView(UserPassesTestMixin, UpdateView):
+    model = Workshop
+    template_name = 'workshops/workshop-form.html'
+    context_object_name = 'workshop-update'
+    fields = ['title', 'date', 'location',
+              'time', 'instructor', 'content', 'images']
+    success_url = '/workshops'
+
+    def test_func(self):
+        return self.request.user.is_superuser
+
+
+class WorkshopDeleteView(UserPassesTestMixin, DeleteView):
+    model = Workshop
+    template_name = 'workshops/workshop-delete.html'
+    context_object_name = 'workshop-delete'
+    success_url = '/workshops'
 
     def test_func(self):
         return self.request.user.is_superuser
