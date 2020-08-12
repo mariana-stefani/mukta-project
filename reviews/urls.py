@@ -1,5 +1,11 @@
 from django.urls import path
-from .views import ReviewListView, ReviewCreateView, ReviewDetailView, ReviewUpdateView, ReviewDeleteView, ReviewUserView
+from .views import (ReviewListView,
+                    ReviewCreateView,
+                    ReviewDetailView,
+                    ReviewUpdateView,
+                    ReviewDeleteView,
+                    ReviewUserView
+                    )
 from . import views
 
 urlpatterns = [
