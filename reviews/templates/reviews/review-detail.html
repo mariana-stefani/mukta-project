@@ -18,9 +18,9 @@
             <h2 class="title-divider review-title">{{ object.title }} </h2>
             <p>{{ object.content }}</p>
             <p class="text-muted">By {{ object.user }} on {{ object.date_posted|date:"F d, Y" }}</p>
-            {% if user == review.user %}
-                    <a class="btn btn-outline-info" href="{% url 'review-update' review.id %}">Update</a>
-                    <a class="btn btn-outline-danger" href="{% url 'review-delete' review.id %}">Delete</a>
+            {% if user == object.user %}
+                    <a class="btn btn-outline-info" href="{% url 'review-update' object.id %}">Update</a>
+                    <a class="btn btn-outline-danger" href="{% url 'review-delete' object.id %}">Delete</a>
                     <a class="btn btn-outline-secondary" href="{% url 'reviews' %}" >Cancel</a>
             {% else %}
             {% endif %}
