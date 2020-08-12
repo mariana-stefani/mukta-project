@@ -11,6 +11,17 @@ header {
   z-index: 1;
 }
 
+/* Links */
+
+.links {
+  color: #444444;
+}
+
+a.links:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
 .text-black {
   color: #000 !important;
 }
