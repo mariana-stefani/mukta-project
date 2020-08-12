@@ -282,6 +282,66 @@ input[name="q"]::placeholder {
   }
 }
 
+/*-- Footer --*/
+
+footer {
+  text-align: center;
+  background-color: lavenderblush;
+  padding: 0.3125rem 0 0.3125rem 0;
+}
+
+#footer-details {
+  margin: 0.625rem;
+}
+
+.social-links {
+  padding: 0.9375rem 0;
+  margin-bottom: 0 !important;
+}
+
+.social-links i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  padding: 0.75rem 0;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  line-height: 7px;
+  background-color: white;
+  color: purple;
+  border: solid 0.0625rem purple;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 0.125rem 0.125rem 0.125rem rgba(109, 64, 76, 1);
+  box-shadow: 0.125rem 0.125rem 0.125rem rgba(109, 64, 76, 1);
+}
+
+.social-links i:hover {
+  background: purple;
+  color: white;
+  border: solid 0.0625rem white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.slice text {
+  font-size: 16pt;
+  font-family: Arial;
+}
+
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
