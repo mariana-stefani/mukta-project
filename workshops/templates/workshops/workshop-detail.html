@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'reviews/css/reviews.css' %}">
+<link rel="stylesheet" href="{% static '/reviews/css/reviews.css' %}">
 {% endblock extra_css %}
 
 {% block content %}
@@ -19,11 +19,14 @@
             <p>{{ object.location }}</p>
             <p>{{ object.instructor }}</p>
             <img class="w-25 mb-5" src="{{object.images}}">
-            <a class="btn btn-outline-info" href="{% url 'workshop-update' object.id %}">Update</a>
-            <a class="btn btn-outline-danger" href="{% url 'workshop-delete' object.id %}">Delete</a>
-            <a class="btn btn-outline-secondary" href="{% url 'workshops' %}" >Cancel</a>
         </div>
     </div>
+    <div>
+        <a class="btn btn-outline-info" href="{% url 'workshop-update' object.id %}">Update</a>
+        <a class="btn btn-outline-danger" href="{% url 'workshop-delete' object.id %}">Delete</a>
+        <a class="btn btn-outline-secondary" href="{% url 'workshops' %}" >Cancel</a>
+    </div>
+    
 </div>
 {% endblock content %}
 
