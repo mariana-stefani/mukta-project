@@ -29,7 +29,7 @@
             <div class="col text-center mt-3">
                 <h2>Products</h2>
                 {% for c in current_categories %}
-                    <a class="text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+                    <a class="links" href="{% url 'products' %}?category={{ c.name }}">
                         <span class="p-2 mt-2 badge border border-dark">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
