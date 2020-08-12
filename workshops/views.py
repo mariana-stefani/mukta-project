@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib.auth.mixins import UserPassesTestMixin
 from django.views.generic import ListView, DetailView, CreateView
 from .models import Workshop
 
@@ -17,7 +18,7 @@ class WorkshopDetailView(DetailView):
     context_object_name = 'workshop-detail'
 
 
-class WorkshopCreateView(CreateView):
+class WorkshopCreateView(UserPassesTestMixin, CreateView):
     model = Workshop
     template_name = 'workshops/workshop-form.html'
     context_object_name = 'workshop-create'
@@ -27,3 +28,6 @@ class WorkshopCreateView(CreateView):
 
     def form_valid(self, form):
         return super().form_valid(form)
+
+    def test_func(self):
+        return self.request.user.is_superuser
