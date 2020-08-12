@@ -25,6 +25,8 @@ class ReviewCreateView(LoginRequiredMixin, CreateView):
 
 class ReviewDetailView(DetailView):
     model = Review
+    template_name = 'workshops/review-detail.html'
+    context_object_name = 'review-detail'
 
 
 class ReviewUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
