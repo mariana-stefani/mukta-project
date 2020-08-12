@@ -15,6 +15,8 @@ class ReviewListView(ListView):
 
 class ReviewCreateView(LoginRequiredMixin, CreateView):
     model = Review
+    template_name = 'workshops/review-form.html'
+    context_object_name = 'review-create'
     fields = ['title', 'content']
     success_url = '/reviews'
 
