@@ -105,6 +105,10 @@ a.links:hover {
   background-color: transparent;
 }
 
+.mobile-nav {
+  padding: 10px;
+}
+
 .bg-img {
   height: 70vh;
   width: fit-content;
@@ -142,7 +146,6 @@ a.links:hover {
 input[name="q"]::placeholder {
   color: #aab7c4;
 }
-
 
 /* Shopping bag */
 
