@@ -29,3 +29,8 @@
     color: #6a2640;
     font-weight: bolder;
 }
+
+.card {
+    border: solid 1px #6a2640;
+    background-color: #F4E6EA !important;
+}
