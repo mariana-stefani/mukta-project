@@ -13,6 +13,10 @@ header {
   z-index: 1;
 }
 
+a {
+  color: #3f8fa8;
+}
+
 /* Buttons */
 
 .btn-dark {
@@ -129,7 +133,8 @@ a.links:hover {
   text-transform: uppercase;
 }
 
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
   background-color: #6a2640 !important;
 }
 
@@ -148,8 +153,9 @@ input[name="q"]::placeholder {
 }
 
 .delivery {
-  background-color: black;
+  background-color:#6a2640 ;
   color: white;
+  padding: 5px;
 }
 
 /* Shopping bag */
