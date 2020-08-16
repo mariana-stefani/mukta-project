@@ -12,9 +12,10 @@
 }
 
 .carousel-inner-container {
-  background-color: #bdb1bf;
+  background-color: #3f8fa8;
   margin-top: 20px;
   padding: 35px 0;
+  height: 300px;
 }
 
 /* Container */
