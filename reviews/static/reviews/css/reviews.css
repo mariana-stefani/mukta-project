@@ -1,3 +1,24 @@
+.title-divider {
+  padding-bottom: 1px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+/* Carousel */
+
+.carousel-container {
+  text-align: center;
+  justify-content: center;
+}
+
+.carousel-inner-container {
+  background-color: #bdb1bf;
+  margin-top: 20px;
+  padding: 35px 0;
+}
+
+/* Container */
+
 .reviews-container {
   background: lavenderblush;
   padding: 10px 20px;
@@ -5,13 +26,7 @@
   border: lavender solid 5px;
   margin-top: 30px;
   margin-bottom: 10px;
-  width: 50%;
-}
-
-.title-divider {
-  padding-bottom: 1px;
-  margin-bottom: 14px;
-  border-bottom: 1px solid #e3e3e3;
+  text-align: center;
 }
 
 /* Create Review */
@@ -19,4 +34,8 @@
 .add-review-btn {
   text-align: center;
   margin-top: 30px;
+}
+
+.single-review {
+ width: 80%;
 }
