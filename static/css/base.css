@@ -22,20 +22,21 @@ a {
 .btn-dark {
   color: #fff;
   background-color: #6a2640;
-  border: 1px solid #ffff;
+  border: 1px solid #6a2640;
 }
 
 .btn-dark:hover,
 .btn-dark:active,
 .btn-dark:focus {
   background: #ffff;
-  color: #6a2640;
-  font-weight: bolder;
+  color: #6a2640 !important;
+  font-weight: bolder !important;
+  border: 1px solid #6a2640 !important;
 }
 
 .btn-outline-dark {
-  background: #ffff;
   color: #6a2640 !important;
+  background-color: #ffff;
   border: 1px solid #6a2640;
 }
 
@@ -142,21 +143,6 @@ input[name="q"]::placeholder {
   color: #aab7c4;
 }
 
-/* Products */
-
-.card-img-top {
-  height: 300px;
-}
-
-.mobile-nav {
-  padding: 10px;
-}
-
-.delivery {
-  background-color:#6a2640 ;
-  color: white;
-  padding: 5px;
-}
 
 /* Shopping bag */
 
