@@ -74,8 +74,9 @@ a {
   color: #444444;
 }
 
+a:hover,
 a.links:hover {
-  color: #428bca;
+  color: #3f8fa8;
   text-decoration: none;
   font-weight: bolder;
 }
@@ -110,7 +111,6 @@ a.links:hover {
 
 .nav-link {
   color: white !important;
-  font-weight: 700;
   text-transform: uppercase;
 }
 
