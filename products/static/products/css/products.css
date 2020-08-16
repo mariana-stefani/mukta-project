@@ -1,4 +1,14 @@
 .border-info {
-    border-color: #3f8fa8 !important;
+  border-color: #3f8fa8 !important;
 }
 
+.card-img-top {
+  height: 300px;
+  width: 400px;
+}
+
+.delivery {
+  background-color: #6a2640;
+  color: white;
+  padding: 5px;
+}
