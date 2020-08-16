@@ -15,7 +15,7 @@
 <div class="reviews-container container">
     <div class="row">
         <div class="col">
-            <h2 class="title-divider links">{{ object.title }} </h2>
+            <h2><a class="title-divider links" href="{% url 'review-detail' object.id %}">{{ object.title }}</a></h2>
             <p>{{ object.content }}</p>
             <p class="text-muted">By {{ object.user }} on {{ object.date_posted|date:"F d, Y" }}</p>
             {% if user == object.user %}
