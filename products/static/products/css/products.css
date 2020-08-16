@@ -20,17 +20,21 @@
 }
 
 .product-name {
-    color: #6a2640;
-    font-weight: bolder;
-    font-size: 23px;
+  color: #6a2640;
+  font-weight: bolder;
+  font-size: 23px;
 }
 
 .product-name-small {
-    color: #6a2640;
-    font-weight: bolder;
+  color: #6a2640;
+  font-weight: bolder;
 }
 
 .card {
-    border: solid 1px #6a2640;
-    background-color: #F4E6EA !important;
+  border: solid 1px #6a2640;
+  background-color: #f4e6ea !important;
+}
+
+.card-bottom {
+  padding: 20px;
 }
