@@ -105,10 +105,6 @@ a.links:hover {
   background-color: transparent;
 }
 
-.mobile-nav {
-  padding: 10px;
-}
-
 .bg-img {
   height: 70vh;
   width: fit-content;
@@ -156,6 +152,12 @@ input[name="q"]::placeholder {
 
 .product-bag {
   color: #6a2640;
+}
+
+.decrement-qty,
+.increment-qty {
+  background-color: #6a2640;
+  color: white;
 }
 
 /* Toasts */
@@ -243,6 +245,21 @@ input[name="q"]::placeholder {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .nav-link i.fa-lg {
+    font-size: 1rem;
+  }
+
+  .link-mobile {
+    font-size: 12px;
+  }
+
+  .navbar-toggler {
+    padding: 0.6rem 0.6rem !important;
+    font-size: 1rem !important;
+  }
+}
+
 /*-- Messages --*/
 
 .msg-container {
@@ -325,7 +342,7 @@ input[name="q"]::placeholder {
 
 footer {
   text-align: center;
-  background-color: #6a2640;
+  background-color: #bdb1bf;
   padding: 0.3125rem 0 0.3125rem 0;
 }
 
@@ -356,8 +373,8 @@ footer {
   font-size: 1.25rem;
   line-height: 7px;
   background-color: white;
-  color: #6a2640;
-  border: solid 0.0625rem #6a2640;
+  color: #736177;
+  border: solid 0.0625rem #736177;
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -367,7 +384,7 @@ footer {
 }
 
 .social-links i:hover {
-  background: #6a2640;
+  background: #736177;
   color: white;
   border: solid 0.0625rem white;
   font-weight: bolder;
