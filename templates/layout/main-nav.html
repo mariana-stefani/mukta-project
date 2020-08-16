@@ -1,5 +1,11 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item">
+            <div class="nav-active"></div>
+            <a class="main-nav nav-link" href="{% url 'home' %}" id="home-link" aria-haspopup="true" aria-expanded="false">
+                Home
+            </a>
+        </li>
         <li class="nav-item dropdown">
             <div class="nav-active"></div>
             <a class="main-nav nav-link" href="{% url 'products' %}" id="products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
