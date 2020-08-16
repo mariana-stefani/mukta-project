@@ -101,7 +101,6 @@ a.links:hover {
 /* Navbar */
 
 .dropdown-menu {
-  background-color: transparent;
   background-color: #bdb1bf;
 }
 .navbar {
@@ -235,46 +234,6 @@ input[name="q"]::placeholder {
   height: 100px;
   overflow-x: hidden;
   overflow-y: auto;
-}
-
-/* Media queries */
-
-@media screen and (min-width: 992px) {
-  .nav-active {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    border-top: solid white;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .nav-link i.fa-lg {
-    font-size: 1rem;
-  }
-
-  .link-mobile {
-    font-size: 12px;
-  }
-
-  .navbar-toggler {
-    padding: 0.6rem 0.6rem !important;
-    font-size: 1rem !important;
-  }
-
-  .navbar-nav {
-    background-color: #bdb1bf;
-    font-size: 15px;
-  }
-
-  #main-nav {
-    font-size: 21px;
-    margin-top: 80px;
-  }
-
-  .navbar {
-    padding: 10px;
-  }
 }
 
 /*-- Messages --*/
@@ -483,3 +442,48 @@ a:link {
     position: relative;
   }
 } */
+
+/* Media queries */
+
+@media screen and (min-width: 992px) {
+  .nav-active {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: solid white;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .nav-link i.fa-lg {
+    font-size: 1rem;
+  }
+
+  .link-mobile {
+    font-size: 12px;
+  }
+
+  .navbar-toggler {
+    padding: 0.6rem 0.6rem !important;
+    font-size: 1rem !important;
+  }
+
+  .navbar-nav {
+    background-color: #bdb1bf;
+    font-size: 15px;
+  }
+
+  #main-nav {
+    font-size: 21px;
+    margin-top: 80px;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .dropdown-menu {
+    font-size: 12px;
+    widows: ;
+  }
+}
