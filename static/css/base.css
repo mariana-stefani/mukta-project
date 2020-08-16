@@ -139,7 +139,7 @@ a.links:hover {
 
 .dropdown-item.active,
 .dropdown-item:active {
-  background-color: #6a2640 !important;
+  background-color: #bdb1bf !important;
 }
 
 input[name="q"]::placeholder {
