@@ -9,11 +9,13 @@
     <section class="callout-container">
         <img src="/media/yoga1.jpg" class="bg-img img-fluid" alt="Mukta Yoga and Wellbeing">
     </section>
-    <div id="delivery-banner" class="row text-center">
-        <div class="col delivery">
-          <h4 class="my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
-        </div>            
-    </div>  
+    <div class="container-fluid">
+        <div class="row text-center delivery">
+            <div class="col ">
+              <h4 class="my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
+            </div>            
+        </div> 
+    </div>     
     {% if messages %} 
     {% for message in messages %}
         <div aria-live="polite" aria-atomic="true" class=" d-flex justify-content-center align-items-center">
