@@ -262,16 +262,20 @@ input[name="q"]::placeholder {
     font-size: 1rem !important;
   }
 
-  #main-nav {
+  .navbar-nav {
     background-color: #bdb1bf;
     font-size: 15px;
-    margin-top: 0;
   }
 
-  .navbar{
+  #main-nav {
+    font-size: 21px;
+    margin-top: 80px;
+  }
+
+  .navbar {
     padding: 10px;
   }
-
+}
 
 /*-- Messages --*/
 
