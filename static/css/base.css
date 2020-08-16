@@ -107,6 +107,7 @@ a.links:hover {
 .nav-link {
   color: white !important;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 #main-nav {
@@ -124,6 +125,12 @@ a.links:hover {
 
 .dropdown-item {
   color: white;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #6a2640 !important;
 }
 
 input[name="q"]::placeholder {
