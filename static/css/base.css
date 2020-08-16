@@ -98,8 +98,11 @@ a.links:hover {
   width: 1.5rem;
 }
 
+/* Navbar */
+
 .dropdown-menu {
   background-color: transparent;
+  background-color: #bdb1bf;
 }
 .navbar {
   background-color: transparent;
@@ -245,7 +248,7 @@ input[name="q"]::placeholder {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .nav-link i.fa-lg {
     font-size: 1rem;
   }
@@ -258,7 +261,17 @@ input[name="q"]::placeholder {
     padding: 0.6rem 0.6rem !important;
     font-size: 1rem !important;
   }
-}
+
+  #main-nav {
+    background-color: #bdb1bf;
+    font-size: 15px;
+    margin-top: 0;
+  }
+
+  .navbar{
+    padding: 10px;
+  }
+
 
 /*-- Messages --*/
 
