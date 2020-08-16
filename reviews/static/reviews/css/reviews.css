@@ -16,7 +16,6 @@
   margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
-  height: 300px;
 }
 /* Carousel */
 
@@ -42,4 +41,12 @@
 
 .single-review {
  width: 80%;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 414px) {
+  .reviews-container {
+    width: 95%;
+  }
 }
