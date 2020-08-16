@@ -57,7 +57,7 @@
                                 </td>
                                 <td>{{ order.date }}</td>
                                 <td>
-                                    <ul class="list-unstyled">
+                                    <ul class="list-unstyled product-bag">
                                         {% for item in order.lineitems.all %}
                                             <li class="small">
                                                 {% if item.product.has_option %}
