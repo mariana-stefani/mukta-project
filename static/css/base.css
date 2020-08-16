@@ -154,6 +154,10 @@ input[name="q"]::placeholder {
   cursor: pointer;
 }
 
+.product-bag {
+  color: #6a2640;
+}
+
 /* Toasts */
 
 .message-container {
