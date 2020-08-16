@@ -34,6 +34,9 @@ class ReviewDetailView(DetailView):
 class ReviewUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Review
     fields = ['title', 'content']
+    template_name = 'reviews/review-form.html'
+    context_object_name = 'review-update'
+    success_url = '/reviews'
 
     def form_valid(self, form):
         form.instance.user = self.request.user
