@@ -367,6 +367,10 @@ footer {
   margin: 0.625rem;
 }
 
+.footer-container {
+  margin-top: 20px;
+}
+
 .social-links {
   padding: 0.9375rem 0;
   margin-bottom: 0 !important;
