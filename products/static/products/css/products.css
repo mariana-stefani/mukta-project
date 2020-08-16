@@ -18,3 +18,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.product-name {
+    color: #6a2640;
+    font-weight: bolder;
+    font-size: 23px;
+}
