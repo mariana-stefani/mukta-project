@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -412,4 +412,13 @@ a:link {
 
 .allauth-form-inner-content a {
   color: #17a2b8; /* text-info */
+}
+
+/* Media queries */
+@media only screen and (min-width: 1201px) {
+  body {
+    width: 85%;
+    margin: auto;
+    position: relative;
+  }
 }
