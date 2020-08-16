@@ -27,7 +27,7 @@
                                             <div class="col">
                                                 <h2><a class="title-divider links" href="{% url 'review-detail' review.id %}">{{ review.title }}</a></h2>
                                                 <p>{{ review.content }}</p>
-                                                <p>By {{ review.user }} on {{ review.date_posted|date:"F d, Y" }}</p>
+                                                <p class="user-review">By {{ review.user }} on {{ review.date_posted|date:"F d, Y" }}</p>
                                             </div>
                                         </div>
                                     </div>
