@@ -49,13 +49,18 @@
   width: 85% !important;
 }
 
+.workshop-header {
+  color: #f3995a;
+  font-weight: bolder;
+}
+
 .add-workshop {
   text-align: center;
   margin-top: 30px;
 }
 
 .add-workshop-btn {
-  color: #F18A42;
+  color: #f18a42;
   border: solid 2px #f3995a;
 }
 
