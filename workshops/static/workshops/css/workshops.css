@@ -27,13 +27,12 @@
 }
 
 .workshop-divider {
-  margin-top: 3.75rem;
-  content: " ";
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  border-bottom: 0.09375rem solid #f7b78a;
-  width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    content: " ";
+    display: flex;
+    border-bottom: 0.09375rem solid #f7b78a;
+    width: 80%;
 }
 
 /* Media Queries */
@@ -45,7 +44,7 @@
   }
 
   .workshop-img {
-    width: 300px;
+    width: 250px;
     height: 350px;
     margin: auto;
     border: solid 20px #f7b78a;
