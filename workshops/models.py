@@ -14,6 +14,7 @@ class Workshop(models.Model):
     content = models.TextField()
     images = models.URLField(max_length=1024, null=True, blank=True)
     order =  models.CharField("'order-md-first' or 'order-md-last' *", max_length=14, null=True, blank=True)
+    divider =  models.CharField("Add 'workshop-divider' unless it\'s the last one on the page *", max_length=16, null=True, blank=True)
 
 
     def __str__(self):
@@ -22,3 +23,4 @@ class Workshop(models.Model):
     
     def get_absolute_url(self):
         return reverse('workshop-detail', kwargs={'pk': self.pk})
+
