@@ -17,17 +17,28 @@
 {% for workshop in workshops %}
 <div class="container text-center workshop-container">
     <div class="row">
-        <div class="col-lg-4 col-10 {{workshop.order}} workshop-desc">
+        <div id="workshop-desc" class="col-lg-6 col-10 order-last {{workshop.order}} workshop-desc">
             <h2><a class="workshop-title" href="{% url 'workshop-detail' workshop.id %}">
                 {{ workshop.title }}
             </a></h2>
-            <h4>{{ workshop.content }}</h4>
-            <p>{{ workshop.date|date:"D, d F o" }}</p>
-            <p>{{ workshop.time }}</p>
-            <p>{{ workshop.location }}</p>
-            <p>{{ workshop.instructor }}</p>
+            <h4> By {{ workshop.instructor }}</h4>
+            <h5 class="mb-5">{{ workshop.content }}</h5>
+            <div class="row">
+                <div class="workshop-box">
+                    <p>When</p>
+                    <p>{{ workshop.date|date:"D, d F o" }}</p>
+                </div>
+                <div class="workshop-box">
+                    <p>Time</p>
+                    <p>{{ workshop.time }}</p>
+                </div>
+                <div class="workshop-box">
+                    <p>Where</p>
+                    <p>{{ workshop.location }}</p>
+                </div>
+            </div>
         </div>
-        <img class="workshop-img teste" src="{{workshop.images}}">     
+        <img class="workshop-img" src="{{workshop.images}}">     
     </div>
  </div>
  <div class="{{workshop.divider}}"></div>
