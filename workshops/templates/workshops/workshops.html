@@ -10,9 +10,9 @@
     <img src="/media/yoga1.jpg" class="bg-img img-fluid" alt="Mukta Yoga and Wellbeing">
 </section>
 {% for workshop in workshops %}
-<div class="container text-center">
+<div class="container text-center workshop-container">
     <div class="row">
-        <div class="col-lg-4 col-10 {{workshop.order}}">
+        <div class="col-lg-4 col-10 {{workshop.order}} workshop-desc">
             <h2><a class="workshop-title" href="{% url 'workshop-detail' workshop.id %}">
                 {{ workshop.title }}
             </a></h2>
@@ -22,7 +22,7 @@
             <p>{{ workshop.location }}</p>
             <p>{{ workshop.instructor }}</p>
         </div>
-        <img class="w-25 mb-5" src="{{workshop.images}}">     
+        <img class="workshop-img" src="{{workshop.images}}">     
     </div>
  </div>
     <!-- <div class="container text-center">
