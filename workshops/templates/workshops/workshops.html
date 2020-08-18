@@ -9,6 +9,11 @@
 <section class="callout-container">
     <img src="/media/yoga1.jpg" class="bg-img img-fluid" alt="Mukta Yoga and Wellbeing">
 </section>
+{% if request.user.is_superuser %}
+<div class="container add-workshop">
+    <a class="btn add-workshop-btn" href="{% url 'workshop-create' %}"> Add New Workshop</a>
+</div>
+{% endif %}
 {% for workshop in workshops %}
 <div class="container text-center workshop-container">
     <div class="row">
