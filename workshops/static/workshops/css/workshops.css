@@ -35,6 +35,18 @@
   width: 80%;
 }
 
+.workshop-box {
+  background-color: #fce4d2;
+  display: inline-block;
+  padding: 5px;
+  height: 150px;
+  font-size: smaller;
+  width: 150px;
+  height: 100px;
+  margin: auto;
+  border:solid 1px #f7b78a;
+}
+
 .workshop-btn-container {
   margin-top: 30px;
 }
@@ -83,4 +95,13 @@
     margin: auto;
     border: solid 20px #f7b78a;
   }
+
+  .testeee {
+    width: 200px !important;
+    height: 80px;
+    margin-bottom: 10px !important;
+    vertical-align: middle;
+    border:solid 1px #f7b78a;
+  }
 }
+
