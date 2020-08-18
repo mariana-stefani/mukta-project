@@ -13,8 +13,8 @@
         <form method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
-                <legend class="mb-4">Delete Workshop</legend>
-                <h2>Do you want to delete workshop"{{ object.title }}"</h2>
+                <legend class="workshop-header mb-4">Delete Workshop</legend>
+                <h3>Do you want to delete workshop"{{ object.title }}"</h3>
             </fieldset>
             <div class="form-group">
                 <button class="btn btn-outline-danger" type="submit">Yes, Delete</button>
