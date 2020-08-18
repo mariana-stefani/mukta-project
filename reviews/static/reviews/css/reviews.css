@@ -12,7 +12,7 @@
 .reviews-container {
   background: #DCECF2;
   padding: 10px 20px;
-  border: solid 3px #3f8fa8;
+  border: solid 5px #3f8fa8;
   margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
@@ -28,7 +28,7 @@
   background-color: #DCECF2;
   margin-top: 20px;
   padding: 35px 0;
-  border: solid 3px #3f8fa8;
+  border: solid 5px #3f8fa8;
 }
 
 /* Create Review */
