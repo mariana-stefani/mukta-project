@@ -3,5 +3,9 @@
   margin-bottom: 14px;
   border-bottom: 1px solid #f28b42;
   color: #f28b42;
-  font-weight: bold;
+}
+
+.workshop-title:hover {
+    color: #f28b42;
+    font-weight: bolder;
 }
