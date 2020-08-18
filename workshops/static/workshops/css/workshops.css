@@ -55,14 +55,13 @@
 }
 
 .add-workshop-btn {
-  color: #f3995a;
-  border-color: #f3995a;
+  color: #F18A42;
+  border: solid 2px #f3995a;
 }
 
 .add-workshop-btn:hover {
   background-color: #f3995a;
   color: #ffffff;
-  border-color: #f3995a;
 }
 
 /* Media Queries */
