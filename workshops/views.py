@@ -23,7 +23,7 @@ class WorkshopCreateView(UserPassesTestMixin, CreateView):
     template_name = 'workshops/workshop-form.html'
     context_object_name = 'workshop-create'
     fields = ['title', 'date', 'location',
-              'time', 'instructor', 'content', 'images']
+              'time', 'instructor', 'content', 'images', 'order']
     success_url = '/workshops'
 
     def test_func(self):
@@ -35,7 +35,7 @@ class WorkshopUpdateView(UserPassesTestMixin, UpdateView):
     template_name = 'workshops/workshop-form.html'
     context_object_name = 'workshop-update'
     fields = ['title', 'date', 'location',
-              'time', 'instructor', 'content', 'images']
+              'time', 'instructor', 'content', 'images', 'order']
     success_url = '/workshops'
 
     def test_func(self):
