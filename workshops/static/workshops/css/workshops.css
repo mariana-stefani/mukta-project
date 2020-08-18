@@ -39,6 +39,15 @@
     margin-top: 30px;
 }
 
+.workshop-form {
+    background: #FCE4D2;
+    padding: 10px 20px;
+    border: solid 5px #f3995a;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 414px) {
