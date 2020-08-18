@@ -35,6 +35,10 @@
     width: 80%;
 }
 
+.workshop-btn-container {
+    margin-top: 30px;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 414px) {
