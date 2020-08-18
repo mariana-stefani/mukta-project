@@ -13,7 +13,7 @@ class Workshop(models.Model):
     instructor = models.CharField(max_length=100)
     content = models.TextField()
     images = models.URLField(max_length=1024, null=True, blank=True)
-    order =  models.CharField("'order-first' or 'order-last'*", max_length=11, null=True, blank=True)
+    order =  models.CharField("'order-md-first' or 'order-md-last' *", max_length=14, null=True, blank=True)
 
 
     def __str__(self):
