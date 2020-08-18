@@ -46,6 +46,7 @@
     margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
+    width: 85% !important;
 }
 
 /* Media Queries */
