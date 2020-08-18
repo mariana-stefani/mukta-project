@@ -1,3 +1,12 @@
+.workshop-container {
+    margin-top: 50px;
+    position: relative;
+}
+
+.workshop-desc{
+    margin: auto;
+}
+
 .workshop-title {
   padding-bottom: 1px;
   margin-bottom: 14px;
@@ -8,4 +17,9 @@
 .workshop-title:hover {
     color: #f28b42;
     font-weight: bolder;
+}
+
+.workshop-img {
+    width: 300px;
+    margin: auto;
 }
