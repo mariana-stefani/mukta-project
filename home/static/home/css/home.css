@@ -1,10 +1,8 @@
 .inner-index {
-  background-color: pink;
   padding: 30px 200px !important;
   margin: auto;
-  position: relative;
-  justify-content: center;
   text-align: left !important;
+  background-color: lightblue;
 }
 
 .index-container {
@@ -19,8 +17,11 @@
 }
 
 .index-p {
-  margin-top: 200px;
+  padding-top: 200px;
   text-align: center;
+  position: relative;
+  justify-content: center;
+  margin: auto;
 }
 
 .index-title {
@@ -31,28 +32,32 @@
   justify-content: left;
 }
 
+/* About Us Backgrond */
+
+.about-index {
+  background-color: lightblue;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 414px) {
   .inner-index {
     padding: 15px !important;
-    background-color: lightblue;
   }
 
   .index-p {
-    margin-top: 10px;
+    padding-top: 10px;
   }
 }
 
 @media screen and (min-width: 415px) and (max-width: 1400px) {
   .inner-index {
     padding: 30px 100px !important;
-    background-color: lavender;
   }
 }
 
 @media screen and (max-width: 991px) {
   .index-p {
-    margin-top: 30px;
+    padding-top: 30px;
   }
 }
