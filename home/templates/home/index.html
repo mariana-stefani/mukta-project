@@ -1,11 +1,24 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+{% endblock extra_css %}
+
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col-7 col-md-6 my-auto">
-            </div>
+    <div class="container index-container">
+        <div class="row inner-index index-h1">
+            <h1>
+                Reviews
+            </h1>
         </div>
-    </div>
+        <div class="row inner-index">
+            <div class="index-p col-lg-6 col-10 order-last">
+                <p>Check the reviews that our lovely customers have left us and feel free to leave one about your experience on our website or about your purchases.
+                    <br/>Reviews
+                </p>
+            </div>
+            <img class="index-img" src="/media/index.png">     
+        </div>
+     </div>
 {% endblock content %}
