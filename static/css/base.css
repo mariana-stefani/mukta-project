@@ -48,6 +48,7 @@ a {
   background: #736177;
   color: #ffff !important;
   font-weight: bolder !important;
+  border: 2px solid #736177;
 }
 
 .btn.btn-outline-dark.rounded-0,
