@@ -37,13 +37,19 @@
 
 .workshop-box {
   background-color: #fce4d2;
-  display: inline-block;
-  padding: 5px;
   font-size: smaller;
+  padding: 5px;
   width: 150px;
   height: 100px;
+  border: solid 1px #f7b78a;
   margin: auto;
-  border:solid 1px #f7b78a;
+  display: inline-block;
+}
+
+.workshop-box p {
+  position: relative;
+  top: 22%;
+  margin-bottom: 6px;
 }
 
 .workshop-btn-container {
@@ -100,7 +106,6 @@
     height: 80px;
     margin-bottom: 10px !important;
     vertical-align: middle;
-    border:solid 1px #f7b78a;
+    border: solid 1px #f7b78a;
   }
 }
-
