@@ -48,6 +48,13 @@
     padding-top: 10px;
     font-size: 16px;
   }
+
+  .index-img {
+    padding: 25px 0;
+    width: 230px;
+    height: 250px;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 415px) and (max-width: 1400px) {
