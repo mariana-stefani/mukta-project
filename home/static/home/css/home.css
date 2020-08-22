@@ -2,7 +2,6 @@
   padding: 30px 200px !important;
   margin: auto;
   text-align: left !important;
-  background-color: lightblue;
 }
 
 .index-container {
@@ -32,17 +31,9 @@
   justify-content: left;
 }
 
-/* Index Page Backgrounds */
-
-.about-index {
-  background-color: #ffffff;
+.background-index {
+  background-color: #EDE9ED;
 }
-
-.products-index {
-  background-color: #FCF8F9;
-}
-
-
 
 /* Media Queries */
 
