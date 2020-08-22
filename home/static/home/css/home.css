@@ -32,11 +32,17 @@
   justify-content: left;
 }
 
-/* About Us Backgrond */
+/* Index Page Backgrounds */
 
 .about-index {
-  background-color: #F6F3FE;
+  background-color: #ffffff;
 }
+
+.products-index {
+  background-color: #FCF8F9;
+}
+
+
 
 /* Media Queries */
 
