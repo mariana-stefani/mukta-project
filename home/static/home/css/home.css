@@ -20,7 +20,8 @@
   position: relative;
   justify-content: center;
   margin: auto;
-  font-size: 20px;
+  font-size: 19px;
+  line-height: 1.8;
 }
 
 .index-title {
@@ -29,6 +30,7 @@
 
 .index-h1{
   justify-content: left;
+  padding-left: 30px;
 }
 
 .background-index {
@@ -44,6 +46,7 @@
 
   .index-p {
     padding-top: 10px;
+    font-size: 16px;
   }
 }
 
@@ -55,6 +58,6 @@
 
 @media screen and (max-width: 991px) {
   .index-p {
-    padding-top: 30px;
+    padding-top: 30px 100px;
   }
 }
