@@ -42,3 +42,34 @@
   color: #6a2640;
   font-weight: bolder;
 }
+
+/* Buttons */
+
+.btn-dark {
+  color: #fff;
+  background-color: #6a2640;
+  border: 1px solid #6a2640;
+}
+
+.btn-dark:hover,
+.btn-dark:active,
+.btn-dark:focus {
+  background: #ffff;
+  color: #6a2640 !important;
+  font-weight: bolder !important;
+  border: 1px solid #6a2640 !important;
+}
+
+.btn-outline-dark {
+  color: #6a2640 !important;
+  background-color: #ffff;
+  border: 1px solid #6a2640;
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:active,
+.btn-outline-dark:focus {
+  background: #6a2640;
+  color: #ffff !important;
+  font-weight: bolder !important;
+}
