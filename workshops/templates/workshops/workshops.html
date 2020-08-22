@@ -5,10 +5,13 @@
     <link rel="stylesheet" href="{% static 'workshops/css/workshops.css' %}">
 {% endblock extra_css %}
 
+{% block banner %}
+    <section class="callout-container">
+        <img src="/media/workshops.jpg" class="bg-img img-fluid" alt="Mukta Yoga and Wellbeing">
+    </section>
+{% endblock banner %}
+
 {% block content %}
-<section class="callout-container">
-    <img src="/media/workshops.jpg" class="bg-img img-fluid" alt="Mukta Yoga and Wellbeing">
-</section>
 {% if request.user.is_superuser %}
 <div class="container add-workshop">
     <a class="btn add-workshop-btn" href="{% url 'workshop-create' %}"> Add New Workshop</a>
