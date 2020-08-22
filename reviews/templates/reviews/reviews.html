@@ -5,11 +5,13 @@
     <link rel="stylesheet" href="{% static 'reviews/css/reviews.css' %}">
 {% endblock extra_css %}
 
-{% block content %}
-<section class="callout-container">
-    <img src="/media/reviews.jpg" class="bg-img img-fluid" alt="Mukta Yoga and Wellbeing">
-</section>
+{% block banner %}
+    <section class="callout-container">
+        <img src="/media/reviews.jpg" class="bg-img img-fluid" alt="Mukta Yoga and Wellbeing">
+    </section>
+{% endblock banner %}
 
+{% block content %}
 <div class="container-fluid">
     <div class="row carousel-container">
         <div class="col-sm-12 col-md-10 col-lg-9">
