@@ -40,6 +40,11 @@
       <!-- Navbar -->
       {% include 'navbar.html' %}
     </header>
+    {% block banner %}
+      <section class="callout-container">
+        <img src="/media/base.jpg" class="bg-img img-fluid" alt="Mukta Yoga and Wellbeing">
+      </section>
+    {% endblock banner %}
 
     {% block content %}
     {% endblock content %}
