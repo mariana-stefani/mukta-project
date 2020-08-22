@@ -38,6 +38,23 @@
   background-color: #EDE9ED;
 }
 
+.index-btn {
+  text-align: center;
+}
+
+.index-btn-outline {
+  background-color: white;
+  color: #736177;
+  border: solid 2px #736177;
+  font-weight: bolder;
+}
+
+.index-btn-outline:hover {
+  background: #736177;
+  color: white;
+  border: solid 2px white;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 414px) {
