@@ -32,13 +32,14 @@ a {
   background: #736177;
   color: #ffffff !important;
   font-weight: bolder !important;
-  border: 1px solid #ffffff !important;
+  border: 2px solid #ffffff !important;
 }
 
 .btn-outline-dark {
   color: #736177 !important;
   background-color: #ffff;
-  border: 1px solid #736177;
+  border: 2px solid #736177;
+  font-weight: bolder;
 }
 
 .btn-outline-dark:hover,
