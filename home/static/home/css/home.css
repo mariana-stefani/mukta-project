@@ -43,7 +43,7 @@
 }
 
 .index-btn-outline {
-  background-color: white;
+  background-color: #ffffff;
   color: #736177;
   border: solid 2px #736177;
   font-weight: bolder;
@@ -51,8 +51,8 @@
 
 .index-btn-outline:hover {
   background: #736177;
-  color: white;
-  border: solid 2px white;
+  color: #ffffff;
+  border: solid 2px #ffffff;
 }
 
 /* Overwrite footer */
