@@ -412,7 +412,7 @@ a:link {
   -ms-user-select: none;
   user-select: none;
   background-color: #736177;
-  border: 1px solid #736177;
+  border: 2px solid #736177;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -429,6 +429,7 @@ a:link {
   background-color: #ffffff;
   border-color: #736177;
   font-weight: bolder;
+  border: 2px solid #736177;
 }
 
 .allauth-form-inner-content a {
