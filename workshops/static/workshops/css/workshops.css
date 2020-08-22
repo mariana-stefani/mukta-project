@@ -8,6 +8,11 @@
   margin: auto;
 }
 
+.workshop-desc h2,h4,
+.content-p {
+  margin-top: 30px;
+}
+
 .workshop-title {
   padding-bottom: 1px;
   margin-bottom: 14px;
@@ -107,9 +112,5 @@
     margin-bottom: 10px !important;
     vertical-align: middle;
     border: solid 1px #f7b78a;
-  }
-
-  .workshop-desc h2, h4, h5 { 
-    margin-top: 30px;
   }
 }
