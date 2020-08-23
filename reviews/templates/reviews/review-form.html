@@ -16,11 +16,12 @@
         <form method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
-                <legend class="mb-4">Add a Review</legend>
+                <legend class="review-header mb-4">Add or Edit a Review</legend>
                 {{ form|crispy }}
             </fieldset>
             <div class="form-group">
                 <button class="btn btn-outline-info" type="submit">Post</button>
+                <a class="btn btn-outline-secondary" href="{% url 'reviews' %}" >Cancel</a>
             </div>
         </form>
     </div>
