@@ -15,15 +15,15 @@
   padding-bottom: 1px;
   margin-bottom: 14px;
   border-bottom: 1px solid #3f8fa8;
-  color: #2A5F70;
+  color: #2a5f70;
 }
 
 .user-review {
-  color: #234F5D;
+  color: #234f5d;
 }
 
 .reviews-container {
-  background: #DCECF2;
+  background: #dcecf2;
   padding: 10px 20px;
   border: solid 5px #3f8fa8;
   margin-top: 30px;
@@ -37,6 +37,8 @@
   margin-left: 3%;
   color: #3f8fa8;
   border: solid 2px #3f8fa8;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .add-review-btn:hover {
@@ -53,7 +55,7 @@
 }
 
 .carousel-inner-container {
-  background-color: #DCECF2;
+  background-color: #dcecf2;
   margin-top: 20px;
   padding: 35px 0;
   border: solid 5px #3f8fa8;
@@ -61,13 +63,13 @@
 
 /* Create Review */
 
-.add-review-btn {
-  text-align: center;
+.add-review-container {
+  text-align: left;
   margin-top: 30px;
 }
 
 .single-review {
- width: 80%;
+  width: 80%;
 }
 
 /* Media queries */
