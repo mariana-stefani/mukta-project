@@ -11,6 +11,7 @@ class ReviewListView(ListView):
     template_name = 'reviews/reviews.html'
     context_object_name = 'reviews'
     ordering = ['-date_posted']
+    paginate_by = 5
 
 
 class ReviewCreateView(LoginRequiredMixin, CreateView):
