@@ -1,3 +1,9 @@
+/* Title */
+
+.title{
+  margin-top: 50px;
+}
+
 .fieldset-label {
   position: relative;
   right: 0.5rem;
