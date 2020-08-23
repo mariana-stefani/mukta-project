@@ -72,6 +72,11 @@
   width: 80%;
 }
 
+.review-header {
+  color: #3f8fa8;
+  font-weight: bolder;
+}
+
 /* Media queries */
 
 @media screen and (max-width: 414px) {
