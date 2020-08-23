@@ -1,0 +1,31 @@
+/* Title */
+
+.title {
+  color: #655669;
+}
+
+/* Proct description */
+
+.product-bag {
+  color: #655669;
+}
+
+/* Product qty */
+
+.decrement-qty,
+.increment-qty {
+  background-color: #655669;
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .btn-outline-dark,
+  .btn-dark {
+    padding: .375rem .375rem;
+    font-size: .75rem;
+  }
+
+  .increment-qty, .decrement-qty {
+      padding: .25rem .5rem !important;
+  }
+}
