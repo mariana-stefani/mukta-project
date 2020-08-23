@@ -88,6 +88,31 @@
   color: #3f8fa8;
 }
 
+/* Reviews pagination */
+
+.reviews-pages {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.reviews-pages-btn {
+  color: #3f8fa8;
+  border: 1px solid #3f8fa8;
+}
+
+.reviews-pages-btn:hover {
+  color: #3f8fa8;
+}
+
+.current-page {
+  color: #ffffff;
+  background-color: #3f8fa8;
+}
+
+.current-page:hover {
+  color: #ffffff;
+}
+
 /* Media queries */
 
 @media screen and (max-width: 414px) {
