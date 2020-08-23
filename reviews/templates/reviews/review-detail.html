@@ -12,9 +12,6 @@
 {% endblock banner %}
 
 {% block content %}
-<div class="container add-review-btn">
-    <a class="btn btn-outline-success" href="{% url 'review-create' %}"> Add New Review</a>
-</div>
 <div class="reviews-container container">
     <div class="row">
         <div class="col">
@@ -29,6 +26,10 @@
             {% endif %}
         </div>
     </div>
+</div>
+<div class="container add-review-container">
+    <p class="reviews-p mt-5">You can add your review here as well:</p>
+    <a class="btn add-review-btn mt-0" href="{% url 'review-create' %}"> Add Review</a>
 </div>
 {% endblock content %}
 
