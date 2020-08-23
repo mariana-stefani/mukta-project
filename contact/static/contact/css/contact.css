@@ -18,6 +18,11 @@
   margin-top: 10px;
 }
 
+.each-contact-title{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
 /* Media queries */
 
 @media screen and (min-width: 1024px) {
