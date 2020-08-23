@@ -73,3 +73,10 @@
   color: #ffff !important;
   font-weight: bolder !important;
 }
+
+/* Media queries */
+@media screen and (width: 1024px) {
+  .ipad-btn {
+    padding: 4px;
+  }
+}
