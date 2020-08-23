@@ -38,7 +38,10 @@
   padding: 30px 0 15px 0;
 }
 
-.form-control {
+/* Form Content */
+
+#id_title,
+#id_content {
   width: 90% !important;
   margin: auto;
 }
