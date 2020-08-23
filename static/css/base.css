@@ -329,6 +329,40 @@ input[name="q"]::placeholder {
   }
 }
 
+/*__ Back to top button --*/
+#top-btn {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 2.5rem;
+  z-index: 99;
+  color: #ffffff;
+  background-color: #736177;
+  cursor: pointer;
+  border-radius: 1.4375rem;
+  border-style: solid;
+  border-color: #736177;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  box-shadow: 0.125rem 0.125rem 0.125rem #9B9B9B;
+}
+
+@media screen and (max-width: 992px) {
+  #top-btn {
+      right: 1.25rem;
+  }
+}
+
+#top-btn:hover {
+  color: #736177;
+  background-color: #ffffff;
+}
+
+.top-btn-show {
+  opacity: 1!important
+}
+
+
 /*-- Footer --*/
 
 footer {
