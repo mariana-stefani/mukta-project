@@ -108,6 +108,17 @@ h4,
   color: #ffffff;
 }
 
+/* Back to top btn */
+
+#top-btn {
+  background-color: #f7b78a;
+  border-color: #f7b78a;
+}
+
+#top-btn:hover {
+  color: #f7b78a;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 414px) {
