@@ -16,8 +16,8 @@
     <div class="row">
         <div class="col">
             <h2><a class="title-divider links" href="{% url 'review-detail' object.id %}">{{ object.title }}</a></h2>
-            <p class="review-content">{{ object.content }}</p>
-            <p class="text-muted">By {{ object.user }} on {{ object.date_posted|date:"F d, Y" }}</p>
+            <p class="review-content mt-3">{{ object.content }}</p>
+            <p class="text-muted mt-3">By {{ object.user }} on {{ object.date_posted|date:"F d, Y" }}</p>
             {% if user == object.user %}
                     <a class="btn btn-outline-info" href="{% url 'review-update' object.id %}">Update</a>
                     <a class="btn btn-outline-danger" href="{% url 'review-delete' object.id %}">Delete</a>
