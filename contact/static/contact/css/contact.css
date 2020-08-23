@@ -11,3 +11,29 @@
 .each-contact {
     margin-top: 30px;
 }
+
+.info-contact {
+    position: relative;
+    margin-top: 10px;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 1024px) {
+    .info-contact {
+        margin-top: 17px;
+        margin-left: -55px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .contact-icon {
+        font-size: 25px;
+        width: 80px;
+        padding: 20px;
+    }
+
+    .info-contact {
+        margin-top: 8px;
+    }
+}
