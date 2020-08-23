@@ -1,3 +1,16 @@
+/* Title */
+
+.title {
+  margin-top: 50px;
+  color: #3f8fa8;
+}
+
+.reviews-p {
+  font-size: 19px;
+  margin-left: 3%;
+  line-height: 2;
+}
+
 .title-divider {
   padding-bottom: 1px;
   margin-bottom: 14px;
@@ -17,6 +30,20 @@
   margin-bottom: 10px;
   text-align: center;
 }
+
+/* Button */
+
+.add-review-btn {
+  margin-left: 3%;
+  color: #3f8fa8;
+  border: solid 2px #3f8fa8;
+}
+
+.add-review-btn:hover {
+  background-color: #3f8fa8;
+  color: #ffffff;
+}
+
 /* Carousel */
 
 .carousel-container {
