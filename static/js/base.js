@@ -1,0 +1,3 @@
+// Toasts
+
+$('.toast').toast('show');
