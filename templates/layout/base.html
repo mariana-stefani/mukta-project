@@ -59,9 +59,10 @@
     <script src="https://js.stripe.com/v3/"></script>
 
     {% block postloadjs %}
-    <script type="text/javascript">
-      $('.toast').toast('show');
-    </script>
+    {{ block.super }}
+
+      <script src="{% static 'js/base.js' %}"></script>
+
     {% endblock postloadjs %}
   </body>
 </html>
