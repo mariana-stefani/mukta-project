@@ -23,12 +23,17 @@
     text-transform: uppercase;
 }
 
+#map {
+    height: 300px;
+    width: 100%;
+}
+
 /* Media queries */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .info-contact {
     margin-top: 17px;
-    margin-left: -55px;
+    margin-left: -50px;
   }
 }
 
