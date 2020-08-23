@@ -12,6 +12,13 @@
 {% endblock banner %}
 
 {% block content %}
+<div class="container">
+    <h1 class="title">Reviews</h1>
+    <p class="reviews-p">Here are some of the reviews that our lovely customers have left us
+        <br/>You can also leave one here:
+    </p>
+    <a class="btn add-review-btn mt-0" href="{% url 'review-create' %}"> Add Review</a>
+</div>
 <div class="container-fluid">
     <div class="row carousel-container">
         <div class="col-sm-12 col-md-10 col-lg-9">
