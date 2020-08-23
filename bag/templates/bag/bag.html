@@ -2,6 +2,11 @@
 {% load static %}
 {% load bag_tools %}
 
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'bag/css/bag.css' %}">
+{% endblock extra_css%}
+
 {% block content %}
     <div class="container mb-2">
         <div class="row">
