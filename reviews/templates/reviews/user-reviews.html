@@ -12,8 +12,8 @@
 {% endblock banner %}
 
 {% block content %}
-<div class="container add-review-btn">
-    <a class="btn btn-outline-success" href="{% url 'review-create' %}"> Add New Review</a>
+<div class="container add-review-container">
+    <a class="btn add-review-btn" href="{% url 'review-create' %}"> Add New Review</a>
 </div>
 {% for review in reviews %}
     {% if user == review.user %}
