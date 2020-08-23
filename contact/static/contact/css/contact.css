@@ -1,39 +1,40 @@
 .contact-icon {
-    font-size: 35px;
-    width: 100px;
-    padding: 20px;
-    background-color: lightcoral;
-    border: solid 2px red;
-    border-radius: 50%;
-    text-align: center;
+  font-size: 35px;
+  width: 100px;
+  padding: 20px;
+  background-color: #e1dbe1;
+  border: solid 2px #655669;
+  border-radius: 50%;
+  text-align: center;
+  color: #655669;
 }
 
 .each-contact {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .info-contact {
-    position: relative;
-    margin-top: 10px;
+  position: relative;
+  margin-top: 10px;
 }
 
 /* Media queries */
 
 @media screen and (min-width: 1024px) {
-    .info-contact {
-        margin-top: 17px;
-        margin-left: -55px;
-    }
+  .info-contact {
+    margin-top: 17px;
+    margin-left: -55px;
+  }
 }
 
 @media screen and (max-width: 414px) {
-    .contact-icon {
-        font-size: 25px;
-        width: 80px;
-        padding: 20px;
-    }
+  .contact-icon {
+    font-size: 25px;
+    width: 80px;
+    padding: 20px;
+  }
 
-    .info-contact {
-        margin-top: 8px;
-    }
+  .info-contact {
+    margin-top: 8px;
+  }
 }
