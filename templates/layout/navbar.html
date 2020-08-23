@@ -29,9 +29,6 @@
         </a>
         <div class="dropdown-menu border-0" aria-labelledby="user-options">
           {% if request.user.is_authenticated %}
-            {% if request.user.is_superuser %}
-                <a href="" class="dropdown-item">Product Management</a>
-            {% endif %}
             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
             <a href="{% url 'user-reviews' %}" class="dropdown-item">My Reviews</a>
             <a href="{% url 'review-create' %}" class="dropdown-item">Add review</a>
