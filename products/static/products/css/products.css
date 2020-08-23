@@ -86,6 +86,17 @@
   font-weight: bolder !important;
 }
 
+/* Back to top btn */
+
+#top-btn {
+  background-color: #6a2640;
+  border-color: #6a2640;
+}
+
+#top-btn:hover {
+  color: #6a2640;
+}
+
 /* Media queries */
 @media screen and (width: 1024px) {
   .ipad-btn {
