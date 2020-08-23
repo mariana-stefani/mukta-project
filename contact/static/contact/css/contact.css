@@ -24,8 +24,12 @@
 }
 
 #map {
-    height: 300px;
+    height: 340px;
     width: 100%;
+}
+
+.map-container {
+    margin-top: 40px;
 }
 
 /* Media queries */
