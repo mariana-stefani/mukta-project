@@ -15,9 +15,45 @@
     <div class="workshop-form container">
         <form method="POST">
             {% csrf_token %}
-            <fieldset class="form-group">
+            <fieldset>
                 <legend class="workshop-header mb-4">Add or Edit a Workshop</legend>
-                {{ form|crispy }}
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      {{ form.title|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-6">
+                      {{ form.date|as_crispy_field }}
+                    </div>              
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                      {{ form.location|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-4">
+                      {{ form.time|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-4">
+                        {{ form.instructor|as_crispy_field }}
+                      </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        {{ form.order|as_crispy_field }}
+                      </div>
+                    <div class="form-group col-md-6">
+                      {{ form.images|as_crispy_field }}
+                    </div>              
+                </div> 
+                <div class="form-row">                    
+                    <div class="form-group col">
+                      {{ form.divider|as_crispy_field }}
+                    </div>              
+                </div>      
+                <div class="form-row">                    
+                    <div class="form-group col">
+                      {{ form.content|as_crispy_field }}
+                    </div>              
+                </div>         
             </fieldset>
             <div class="form-group">
                 <button class="btn btn-outline-info" type="submit">Post</button>
