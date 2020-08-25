@@ -14,7 +14,7 @@
 {% block content %}
 {% if request.user.is_superuser %}
 <div class="container add-workshop">
-    <a class="btn add-workshop-btn" href="{% url 'workshop-create' %}"> Add New Workshop</a>
+    <a class="btn add-workshop-btn" aria-label="Add new workshop" href="{% url 'workshop-create' %}"> Add New Workshop</a>
 </div>
 {% endif %}
 <div class="container">
@@ -25,7 +25,7 @@
 <div class="container text-center workshop-container">
     <div class="row">
         <div id="workshop-desc" class="col-lg-6 col-10 order-last {{workshop.order}} workshop-desc">
-            <h2><a class="workshop-title" href="{% url 'workshop-detail' workshop.id %}">
+            <h2><a class="workshop-title" aria-label="Workshop title" href="{% url 'workshop-detail' workshop.id %}">
                 {{ workshop.title }}
             </a></h2>
             <h4> By {{ workshop.instructor }}</h4>
@@ -55,27 +55,27 @@
     {% if is_paginated %}
 
         {% if page_obj.has_previous %}
-            <a class="btn workshop-pages-btn mb-4" href="?page=1"><span>
+            <a class="btn workshop-pages-btn mb-4" aria-label="Go to first page"href="?page=1"><span>
                 <i class="fas fa-angle-double-left"></i>
             </span></a>
-            <a class="btn workshop-pages-btn mb-4" href="?page={{ page_obj.previous_page_number }}"><span>
+            <a class="btn workshop-pages-btn mb-4" aria-label="Go to previous page"href="?page={{ page_obj.previous_page_number }}"><span>
                 <i class="fas fa-angle-left"></i>
             </span></a>
         {% endif %}
 
         {% for num in page_obj.paginator.page_range %}
             {% if page_obj.number == num %}
-                <a class="btn current-page mb-4" href="?page={{ num }}">{{ num }}</a>
+                <a class="btn current-page mb-4" aria-label="Current page" href="?page={{ num }}">{{ num }}</a>
             {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
-                <a class="btn workshop-pages-btn mb-4" href="?page={{ num }}">{{ num }}</a>
+                <a class="btn workshop-pages-btn mb-4" aria-label="Reviews page" href="?page={{ num }}">{{ num }}</a>
             {% endif %}
         {% endfor %}
 
         {% if page_obj.has_next %}
-            <a class="btn workshop-pages-btn mb-4" href="?page={{ page_obj.next_page_number }}"><span>
+            <a class="btn workshop-pages-btn mb-4" aria-label="Go to next page" href="?page={{ page_obj.next_page_number }}"><span>
                 <i class="fas fa-angle-right"></i>
             </span></a>
-            <a class="btn workshop-pages-btn mb-4" href="?page={{ page_obj.paginator.num_pages }}"><span>
+            <a class="btn workshop-pages-btn mb-4" aria-label="Go to last page" href="?page={{ page_obj.paginator.num_pages }}"><span>
                 <i class="fas fa-angle-double-right"></i>
             </span></a>
         {% endif %}
