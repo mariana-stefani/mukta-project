@@ -89,9 +89,11 @@ View my wireframes [here](#).
 - During development of this project I worked with the standard **sqlite3** database that comes installed with Django.
 - In the production version of Mukta - Yoga and Wellbeing, the database is a **PostgreSQL** database, hosted and provided by **Heroku**.
 
-### Collections Data Structure
+### Mukta Yoga and Wellbeing Data Models:
 
-#### Order Collection
+The user model used in this project is provided by Django. You can find more informtaion about this [here](https://docs.djangoproject.com/en/3.0/ref/contrib/auth/)
+
+#### The Order Model
 
 | _Title_          | _Key in DB_     | _Form Validation type_                                                               | _Data type_   |
 | ---------------- | --------------- | ------------------------------------------------------------------------------------ | ------------- |
@@ -113,7 +115,7 @@ View my wireframes [here](#).
 | Original Bag     | original_bag    | null=False, blank=False, default=''                                                  | TextField     |
 | Stripe PID       | stripe_pid      | max_length=254, null=False, blank=False, default=''                                  | CharField     |
 
-#### OrderLineItem Collection
+#### The OrderLineItem Model
 
 | _Title_         | _Key in DB_    | _Form Validation type_                                                             | _Data Type_  |
 | --------------- | -------------- | ---------------------------------------------------------------------------------- | ------------ |
@@ -123,14 +125,14 @@ View my wireframes [here](#).
 | Quantity        | quantity       | null=False, blank=False, default=0                                                 | IntegerField |
 | Line Item Total | lineitem_total | max_digits=6, decimal_places=2, null=False, blank=False, editable=False            | DecimalField |
 
-#### Category Collection
+#### The Category Model
 
 | _Title_       | _Key in DB_   | _Form Validation type_                | _Data Type_ |
 | ------------- | ------------- | ------------------------------------- | ----------- |
 | Name          | name          | max_length=254                        | CharField   |
 | Friendly Name | friendly_name | max_length=254, null=True, blank=True | CharField   |
 
-#### Product Collection
+#### The Product Model
 
 | _Title_     | _Key in DB_ | _Form Validation type_                                       | _Data Type_  |
 |-------------|-------------|--------------------------------------------------------------|--------------|
@@ -143,7 +145,7 @@ View my wireframes [here](#).
 | Image URL   | image_url   | max_length=1024, null=True, blank=True                       | URLField     |
 | Image       | image       | null=True, blank=True                                        | ImageField   |
 
-#### UserProfile Collection
+#### The UserProfile Model
 
 | _Title_                  | _Key in DB_             | _Form Validation type_                       | _Data Type_   |
 | ------------------------ | ----------------------- | -------------------------------------------- | ------------- |
@@ -157,7 +159,7 @@ View my wireframes [here](#).
 | Default Post Code        | default_postcode        | max_length=20, null=True, blank=True         | CharField     |
 | Default Country          | default_country         | blank_label='Country', null=True, blank=True | CountryField  |
 
-#### Review Collection
+#### The Review Model
 
 | _Title_     | _Key in DB_ | _Form Validation type_         | _Data Type_   |
 | ----------- | ----------- | ------------------------------ | ------------- |
@@ -166,7 +168,7 @@ View my wireframes [here](#).
 | Content     | content     | max_length=45                  | TextField     |
 | Date Posted | date_posted | default=timezone.now           | DateTimeField |
 
-#### Workshop Collection
+#### The Workshop Model
 
 | _Title_    | _Key in DB_ | _Form Validation type_                                                                                            | _Data Type_ |
 | ---------- | ----------- | ----------------------------------------------------------------------------------------------------------------- | ----------- |
