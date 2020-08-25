@@ -14,8 +14,8 @@
 {% block content %}
 <div class="container add-review-container">
     <h1 class="title">My Reviews</h1>
-    <a class="btn add-review-btn mt-0 mb-2" href="{% url 'review-create' %}"> Add New Review</a>
-    <a class="btn add-review-btn mt-0 mb-2" href="{% url 'reviews' %}"> Back to Reviews Page</a>
+    <a class="btn add-review-btn mt-0 mb-2" aria-label="Add new review" href="{% url 'review-create' %}"> Add New Review</a>
+    <a class="btn add-review-btn mt-0 mb-2" aria-label="Back to reviews page" href="{% url 'reviews' %}"> Back to Reviews Page</a>
 </div>
 
 {% for review in reviews %}
@@ -23,12 +23,12 @@
         <div class="reviews-container container">
             <div class="row">
                 <div class="col">
-                    <h2><a class="title-divider links" href="{% url 'review-detail' review.id %}">{{ review.title }}</a></h2>
+                    <h2><a class="title-divider links" aria-label="Reviews title" href="{% url 'review-detail' review.id %}">{{ review.title }}</a></h2>
                     <p class="review-content mt-3">{{ review.content }}</p>
                     <p class="text-muted mt-3">By {{ review.user }} {%if review.friendly_name %} ({{ review.friendly_name }}) on {{ review.date_posted|date:"F d, Y" }}{% else %}on {{ review.date_posted}}{% endif %}</p>
-                    <a class="btn btn-outline-info" href="{% url 'review-update' review.id %}">Update</a>
-                    <a class="btn btn-outline-danger" href="{% url 'review-delete' review.id %}">Delete</a>
-                    <a class="btn btn-outline-secondary" href="{% url 'reviews' %}" >Cancel</a>
+                    <a class="btn btn-outline-info" aria-label="Update review" href="{% url 'review-update' review.id %}">Update</a>
+                    <a class="btn btn-outline-danger" aria-label="Delete review" href="{% url 'review-delete' review.id %}">Delete</a>
+                    <a class="btn btn-outline-secondary" aria-label="Cancel" href="{% url 'reviews' %}" >Cancel</a>
                 </div>
             </div>
         </div>
@@ -41,27 +41,27 @@
     {% if is_paginated %}
 
         {% if page_obj.has_previous %}
-            <a class="btn reviews-pages-btn mb-4" href="?page=1"><span>
+            <a class="btn reviews-pages-btn mb-4" aria-label="Go to first page" href="?page=1"><span>
                 <i class="fas fa-angle-double-left"></i>
             </span></a>
-            <a class="btn reviews-pages-btn mb-4" href="?page={{ page_obj.previous_page_number }}"><span>
+            <a class="btn reviews-pages-btn mb-4" aria-label="Go to previous page" href="?page={{ page_obj.previous_page_number }}"><span>
                 <i class="fas fa-angle-left"></i>
             </span></a>
         {% endif %}
 
         {% for num in page_obj.paginator.page_range %}
             {% if page_obj.number == num %}
-                <a class="btn current-page mb-4" href="?page={{ num }}">{{ num }}</a>
+                <a class="btn current-page mb-4" aria-label="Current page" href="?page={{ num }}">{{ num }}</a>
             {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
-                <a class="btn reviews-pages-btn mb-4" href="?page={{ num }}">{{ num }}</a>
+                <a class="btn reviews-pages-btn mb-4" aria-label="My reviews pages" href="?page={{ num }}">{{ num }}</a>
             {% endif %}
         {% endfor %}
 
         {% if page_obj.has_next %}
-            <a class="btn reviews-pages-btn mb-4" href="?page={{ page_obj.next_page_number }}"><span>
+            <a class="btn reviews-pages-btn mb-4" aria-label="Go to next page" href="?page={{ page_obj.next_page_number }}"><span>
                 <i class="fas fa-angle-right"></i>
             </span></a>
-            <a class="btn reviews-pages-btn mb-4" href="?page={{ page_obj.paginator.num_pages }}"><span>
+            <a class="btn reviews-pages-btn mb-4" aria-label="Go to last page" href="?page={{ page_obj.paginator.num_pages }}"><span>
                 <i class="fas fa-angle-double-right"></i>
             </span></a>
         {% endif %}
