@@ -50,6 +50,38 @@
  </div>
  <div class="{{workshop.divider}}"></div>
 {% endfor %}
+
+<div class="workshop-pages">
+    {% if is_paginated %}
+
+        {% if page_obj.has_previous %}
+            <a class="btn workshop-pages-btn mb-4" href="?page=1"><span>
+                <i class="fas fa-angle-double-left"></i>
+            </span></a>
+            <a class="btn workshop-pages-btn mb-4" href="?page={{ page_obj.previous_page_number }}"><span>
+                <i class="fas fa-angle-left"></i>
+            </span></a>
+        {% endif %}
+
+        {% for num in page_obj.paginator.page_range %}
+            {% if page_obj.number == num %}
+                <a class="btn current-page mb-4" href="?page={{ num }}">{{ num }}</a>
+            {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                <a class="btn workshop-pages-btn mb-4" href="?page={{ num }}">{{ num }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if page_obj.has_next %}
+            <a class="btn workshop-pages-btn mb-4" href="?page={{ page_obj.next_page_number }}"><span>
+                <i class="fas fa-angle-right"></i>
+            </span></a>
+            <a class="btn workshop-pages-btn mb-4" href="?page={{ page_obj.paginator.num_pages }}"><span>
+                <i class="fas fa-angle-double-right"></i>
+            </span></a>
+        {% endif %}
+
+    {% endif %}
+</div>
 {% endblock content %}
 
 
