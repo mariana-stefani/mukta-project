@@ -91,6 +91,29 @@ View my wireframes [here](#).
 
 ### Collections Data Structure
 
+
+#### Order Collection
+
+| Title            | Key in DB       | Form Validation type                                                                 | Data type     |
+|------------------|-----------------|--------------------------------------------------------------------------------------|---------------|
+| Order Number     | order_number    | max_length=32, null=False, editable=False                                            | CharField     |
+| User Profile     | user_profile    | UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders' | ForeignKey    |
+| Full Name        | full_name       | max_length=50, null=False, blank=False                                               | CharField     |
+| Email            | email           | max_length=254, null=False, blank=False                                              | EmailField    |
+| Phone Number     | phone_number    | max_length=20, null=False, blank=False                                               | CharField     |
+| Country          | country         | blank_label='Country *', null=False, blank=False                                     | CountryField  |
+| Post Code        | postcode        | max_length=20, null=True, blank=True                                                 | CharField     |
+| Town or City     | town_or_city    | max_length=40, null=False, blank=False                                               | CharField     |
+| Street Address 1 | street_address1 | max_length=80, null=False, blank=False                                               | CharField     |
+| Street Address 2 | street_address2 | max_length=80, null=True, blank=True                                                 | CharField     |
+| County           | county          | max_length=80, null=True, blank=True                                                 | CharField     |
+| Date             | date            | auto_now_add=True                                                                    | DateTimeField |
+| Delivery Cost    | delivery_cost   | max_digits=6, decimal_places=2, null=False, default=0                                | DecimalField  |
+| Order Total      | order_total     | max_digits=10, decimal_places=2, null=False, default=0                               | DecimalField  |
+| Grand Total      | grand_total     | max_digits=10, decimal_places=2, null=False, default=0                               | DecimalField  |
+| Original Bag     | original_bag    | null=False, blank=False, default=''                                                  | TextField     |
+| Stripe PID       | stripe_pid      | max_length=254, null=False, blank=False, default=''                                  | CharField     |
+
 ## Technologies Used
 
 The technologies used were:
