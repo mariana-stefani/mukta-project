@@ -14,18 +14,18 @@
 {% block content %}
 <div class="container">
     <h1 class="title">Detailed Review</h1>
-    <a class="btn add-review-btn mt-0" href="{% url 'reviews' %}"> Back to Reviews Page</a>
+    <a class="btn add-review-btn mt-0" href="{% url 'reviews' %}" aria-label="Back to reviews page"> Back to Reviews Page</a>
 </div>
 <div class="reviews-container container">
     <div class="row">
         <div class="col">
-            <h2><a class="title-divider links" href="{% url 'review-detail' object.id %}">{{ object.title }}</a></h2>
+            <h2><a class="title-divider links" href="{% url 'review-detail' object.id %}" aria-label="Review title">{{ object.title }}</a></h2>
             <p class="review-content mt-3">{{ object.content }}</p>
             <p class="text-muted mt-3">By {{ object.user }} on {{ object.date_posted|date:"F d, Y" }}</p>
             {% if user == object.user %}
-                    <a class="btn btn-outline-info" href="{% url 'review-update' object.id %}">Update</a>
-                    <a class="btn btn-outline-danger" href="{% url 'review-delete' object.id %}">Delete</a>
-                    <a class="btn btn-outline-secondary" href="{% url 'reviews' %}" >Cancel</a>
+                    <a class="btn btn-outline-info" href="{% url 'review-update' object.id %}" aria-label="Update">Update</a>
+                    <a class="btn btn-outline-danger" href="{% url 'review-delete' object.id %}" aria-label="Delete">Delete</a>
+                    <a class="btn btn-outline-secondary" href="{% url 'reviews' %}" aria-label="Cancel">Cancel</a>
             {% else %}
             {% endif %}
         </div>
@@ -33,7 +33,7 @@
 </div>
 <div class="container add-review-container">
     <p class="reviews-p mt-5">You can add your review here as well:</p>
-    <a class="btn add-review-btn mt-0" href="{% url 'review-create' %}"> Add Review</a>
+    <a class="btn add-review-btn mt-0" href="{% url 'review-create' %}" aria-label="Add review">Add Review</a>
 </div>
 {% endblock content %}
 
