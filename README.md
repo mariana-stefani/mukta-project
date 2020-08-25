@@ -142,7 +142,7 @@ View my wireframes [here](#).
 | Image       | image       | null=True, blank=True                                        | ImageField   |
 
 
-#### User Profile Collection
+#### UserProfile Collection
 | Title                    | Key in DB               | Form Validation type                         | Data Type     |
 |--------------------------|-------------------------|----------------------------------------------|---------------|
 | User                     | user                    | User, on_delete=models.CASCADE               | OneToOneField |
@@ -154,6 +154,15 @@ View my wireframes [here](#).
 | Default County           | default_county          | max_length=80, null=True, blank=True         | CharField     |
 | Default Post Code        | default_postcode        | max_length=20, null=True, blank=True         | CharField     |
 | Default Country          | default_country         | blank_label='Country', null=True, blank=True | CountryField  |
+
+
+#### Review Collection
+| Title       | Key in DB   | Form Validation type           | Data Type     |
+|-------------|-------------|--------------------------------|---------------|
+| User        | user        | User, on_delete=models.CASCADE | ForeignKey    |
+| Title       | title       | max_length=10                  | CharField     |
+| Content     | content     | max_length=45                  | TextField     |
+| Date Posted | date_posted | default=timezone.now           | DateTimeField |
 
 ## Technologies Used
 
