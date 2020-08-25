@@ -141,6 +141,20 @@ View my wireframes [here](#).
 | Image URL   | image_url   | max_length=1024, null=True, blank=True                       | URLField     |
 | Image       | image       | null=True, blank=True                                        | ImageField   |
 
+
+#### User Profile Collection
+| Title                    | Key in DB               | Form Validation type                         | Data Type     |
+|--------------------------|-------------------------|----------------------------------------------|---------------|
+| User                     | user                    | User, on_delete=models.CASCADE               | OneToOneField |
+| Default Full Name        | default_full_name       | max_length=80, null=True, blank=True         | CharField     |
+| Default Phone Number     | default_phone_number    | max_length=20, null=True, blank=True         | CharField     |
+| Default Street Address 1 | default_street_address1 | max_length=80, null=True, blank=True         | CharField     |
+| Default Street Address 2 | default_street_address2 | max_length=80, null=True, blank=True         | CharField     |
+| Default Town or City     | default_town_or_city    | max_length=40, null=True, blank=True         | CharField     |
+| Default County           | default_county          | max_length=80, null=True, blank=True         | CharField     |
+| Default Post Code        | default_postcode        | max_length=20, null=True, blank=True         | CharField     |
+| Default Country          | default_country         | blank_label='Country', null=True, blank=True | CountryField  |
+
 ## Technologies Used
 
 The technologies used were:
