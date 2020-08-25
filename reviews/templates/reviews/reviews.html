@@ -17,13 +17,13 @@
     <p class="reviews-p">Here are some of the reviews that our lovely customers have left us
         <br/>You can also leave one here:
     </p>
-    <a class="btn add-review-btn mt-0" href="{% url 'review-create' %}"> Add Review</a>
+    <a class="btn add-review-btn mt-0" aria-label="Add review" href="{% url 'review-create' %}"> Add Review</a>
 </div>
 {% for review in reviews %}
 <div class="reviews-container container">    
     <div class="row">        
         <div class="col">
-            <h2><a class="title-divider links" href="{% url 'review-detail' review.id %}">{{ review.title }}</a></h2>
+            <h2><a class="title-divider links" aria-label="Review title" href="{% url 'review-detail' review.id %}">{{ review.title }}</a></h2>
             <p class="review-content mt-3">{{ review.content }}</p>
             <p class="text-muted mt-3">By {{ review.user }} {%if review.friendly_name %} ({{ review.friendly_name }}) on {{ review.date_posted|date:"F d, Y" }}{% else %}on {{ review.date_posted}}{% endif %}</p>
         </div>        
@@ -36,27 +36,27 @@
     {% if is_paginated %}
 
         {% if page_obj.has_previous %}
-            <a class="btn reviews-pages-btn mb-4" href="?page=1"><span>
+            <a class="btn reviews-pages-btn mb-4" aria-label="Go to first page" href="?page=1"><span>
                 <i class="fas fa-angle-double-left"></i>
             </span></a>
-            <a class="btn reviews-pages-btn mb-4" href="?page={{ page_obj.previous_page_number }}"><span>
+            <a class="btn reviews-pages-btn mb-4" aria-label="Go to previous page" href="?page={{ page_obj.previous_page_number }}"><span>
                 <i class="fas fa-angle-left"></i>
             </span></a>
         {% endif %}
 
         {% for num in page_obj.paginator.page_range %}
             {% if page_obj.number == num %}
-                <a class="btn current-page mb-4" href="?page={{ num }}">{{ num }}</a>
+                <a class="btn current-page mb-4" aria-label="Current page" href="?page={{ num }}">{{ num }}</a>
             {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
-                <a class="btn reviews-pages-btn mb-4" href="?page={{ num }}">{{ num }}</a>
+                <a class="btn reviews-pages-btn mb-4" aria-label="Reviews page" href="?page={{ num }}">{{ num }}</a>
             {% endif %}
         {% endfor %}
 
         {% if page_obj.has_next %}
-            <a class="btn reviews-pages-btn mb-4" href="?page={{ page_obj.next_page_number }}"><span>
+            <a class="btn reviews-pages-btn mb-4" aria-label="Go to next page" href="?page={{ page_obj.next_page_number }}"><span>
                 <i class="fas fa-angle-right"></i>
             </span></a>
-            <a class="btn reviews-pages-btn mb-4" href="?page={{ page_obj.paginator.num_pages }}"><span>
+            <a class="btn reviews-pages-btn mb-4" aria-label="Go to last page" href="?page={{ page_obj.paginator.num_pages }}"><span>
                 <i class="fas fa-angle-double-right"></i>
             </span></a>
         {% endif %}
