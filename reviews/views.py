@@ -70,3 +70,4 @@ class ReviewUserView(ListView):
     context_object_name = 'reviews'
     template_name = 'reviews/user-reviews.html'
     ordering = ['-date_posted']
+    paginate_by = 5
