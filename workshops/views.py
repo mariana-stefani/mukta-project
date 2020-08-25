@@ -10,6 +10,7 @@ class WorkshopListView(ListView):
     model = Workshop
     template_name = 'workshops/workshops.html'
     context_object_name = 'workshops'
+    paginate_by = 5
 
 
 class WorkshopDetailView(DetailView):
