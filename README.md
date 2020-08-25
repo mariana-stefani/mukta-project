@@ -91,17 +91,16 @@ View my wireframes [here](#).
 
 ### Collections Data Structure
 
-
 #### Order Collection
 
-| Title            | Key in DB       | Form Validation type                                                                 | Data type     |
-|------------------|-----------------|--------------------------------------------------------------------------------------|---------------|
+| _Title_          | _Key in DB_     | _Form Validation type_                                                               | _Data type_   |
+| ---------------- | --------------- | ------------------------------------------------------------------------------------ | ------------- |
 | Order Number     | order_number    | max_length=32, null=False, editable=False                                            | CharField     |
 | User Profile     | user_profile    | UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders' | ForeignKey    |
 | Full Name        | full_name       | max_length=50, null=False, blank=False                                               | CharField     |
 | Email            | email           | max_length=254, null=False, blank=False                                              | EmailField    |
 | Phone Number     | phone_number    | max_length=20, null=False, blank=False                                               | CharField     |
-| Country          | country         | blank_label='Country *', null=False, blank=False                                     | CountryField  |
+| Country          | country         | blank_label='Country \*', null=False, blank=False                                    | CountryField  |
 | Post Code        | postcode        | max_length=20, null=True, blank=True                                                 | CharField     |
 | Town or City     | town_or_city    | max_length=40, null=False, blank=False                                               | CharField     |
 | Street Address 1 | street_address1 | max_length=80, null=False, blank=False                                               | CharField     |
@@ -115,8 +114,9 @@ View my wireframes [here](#).
 | Stripe PID       | stripe_pid      | max_length=254, null=False, blank=False, default=''                                  | CharField     |
 
 #### OrderLineItem Collection
-| Title           | Key in DB      | Form Validation type                                                               | Data Type    |
-|-----------------|----------------|------------------------------------------------------------------------------------|--------------|
+
+| _Title_         | _Key in DB_    | _Form Validation type_                                                             | _Data Type_  |
+| --------------- | -------------- | ---------------------------------------------------------------------------------- | ------------ |
 | Order           | order          | Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems' | ForeignKey   |
 | Product         | product        | Product, null=False, blank=False, on_delete=models.CASCADE                         | ForeignKey   |
 | Product Colour  | product_colour | max_length=2, null=True, blank=True                                                | CharField    |
@@ -124,14 +124,16 @@ View my wireframes [here](#).
 | Line Item Total | lineitem_total | max_digits=6, decimal_places=2, null=False, blank=False, editable=False            | DecimalField |
 
 #### Category Collection
-| Title         | Key in DB     | Form Validation type                  | Data Type |
-|---------------|---------------|---------------------------------------|-----------|
-| Name          | name          | max_length=254                        | CharField |
-| Friendly Name | friendly_name | max_length=254, null=True, blank=True | CharField |
+
+| _Title_       | _Key in DB_   | _Form Validation type_                | _Data Type_ |
+| ------------- | ------------- | ------------------------------------- | ----------- |
+| Name          | name          | max_length=254                        | CharField   |
+| Friendly Name | friendly_name | max_length=254, null=True, blank=True | CharField   |
 
 #### Product Collection
-| Title       | Key in DB   | Form Validation type                                         | Data Type    |
-|-------------|-------------|--------------------------------------------------------------|--------------|
+
+| _Title_     | _Key in DB_ | _Form Validation type_                                       | _Data Type_  |
+| ----------- | ----------- | ------------------------------------------------------------ | ------------ |
 | Category    | category    | 'Category', null=True, blank=True, on_delete=models.SET_NULL | ForeignKey   |
 | SKU         | sku         | max_length=254, null=True, blank=True                        | CharField    |
 | Name        | name        | max_length=254                                               | CharField    |
@@ -141,10 +143,10 @@ View my wireframes [here](#).
 | Image URL   | image_url   | max_length=1024, null=True, blank=True                       | URLField     |
 | Image       | image       | null=True, blank=True                                        | ImageField   |
 
-
 #### UserProfile Collection
-| Title                    | Key in DB               | Form Validation type                         | Data Type     |
-|--------------------------|-------------------------|----------------------------------------------|---------------|
+
+| _Title_                  | _Key in DB_             | _Form Validation type_                       | _Data Type_   |
+| ------------------------ | ----------------------- | -------------------------------------------- | ------------- |
 | User                     | user                    | User, on_delete=models.CASCADE               | OneToOneField |
 | Default Full Name        | default_full_name       | max_length=80, null=True, blank=True         | CharField     |
 | Default Phone Number     | default_phone_number    | max_length=20, null=True, blank=True         | CharField     |
@@ -155,28 +157,28 @@ View my wireframes [here](#).
 | Default Post Code        | default_postcode        | max_length=20, null=True, blank=True         | CharField     |
 | Default Country          | default_country         | blank_label='Country', null=True, blank=True | CountryField  |
 
-
 #### Review Collection
-| Title       | Key in DB   | Form Validation type           | Data Type     |
-|-------------|-------------|--------------------------------|---------------|
+
+| _Title_     | _Key in DB_ | _Form Validation type_         | _Data Type_   |
+| ----------- | ----------- | ------------------------------ | ------------- |
 | User        | user        | User, on_delete=models.CASCADE | ForeignKey    |
 | Title       | title       | max_length=10                  | CharField     |
 | Content     | content     | max_length=45                  | TextField     |
 | Date Posted | date_posted | default=timezone.now           | DateTimeField |
 
-
 #### Workshop Collection
-| Title      | Key in DB  | Form Validation type                                                                                             | Data Type |
-|------------|------------|------------------------------------------------------------------------------------------------------------------|-----------|
-| Title      | title      | max_length=100                                                                                                   | CharField |
-| Date       | date       | "Date (YYYY-MM-DD)*", auto_now_add=False, auto_now=False, blank=True                                             | DateField |
-| Location   | location   | max_length=100                                                                                                   | CharField |
-| Time       | time       | max_length=10                                                                                                    | CharField |
-| Instructor | instructor | max_length=100                                                                                                   | CharField |
-| Content    | content    |                                                                                                                  | TextField |
-| Images     | images     | "Image URL*", max_length=1024, null=True, blank=True                                                             | URLField  |
-| Order      | order      | "Add 'order-md-first' or 'order-md-last' accordingly*", max_length=14, null=True, blank=True                     | CharField |
-| Divider    | divider    | "Add 'workshop-divider' (Unless it\'s the last workshop one on the page)*", max_length=16, null=True, blank=True | CharField |
+
+| _Title_    | _Key in DB_ | _Form Validation type_                                                                                            | _Data Type_ |
+| ---------- | ----------- | ----------------------------------------------------------------------------------------------------------------- | ----------- |
+| Title      | title       | max_length=100                                                                                                    | CharField   |
+| Date       | date        | "Date (YYYY-MM-DD)\*", auto_now_add=False, auto_now=False, blank=True                                             | DateField   |
+| Location   | location    | max_length=100                                                                                                    | CharField   |
+| Time       | time        | max_length=10                                                                                                     | CharField   |
+| Instructor | instructor  | max_length=100                                                                                                    | CharField   |
+| Content    | content     |                                                                                                                   | TextField   |
+| Images     | images      | "Image URL\*", max_length=1024, null=True, blank=True                                                             | URLField    |
+| Order      | order       | "Add 'order-md-first' or 'order-md-last' accordingly\*", max_length=14, null=True, blank=True                     | CharField   |
+| Divider    | divider     | "Add 'workshop-divider' (Unless it\'s the last workshop one on the page)\*", max_length=16, null=True, blank=True | CharField   |
 
 ## Technologies Used
 
