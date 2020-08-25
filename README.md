@@ -123,6 +123,24 @@ View my wireframes [here](#).
 | Quantity        | quantity       | null=False, blank=False, default=0                                                 | IntegerField |
 | Line Item Total | lineitem_total | max_digits=6, decimal_places=2, null=False, blank=False, editable=False            | DecimalField |
 
+#### Category Collection
+| Title         | Key in DB     | Form Validation type                  | Data Type |
+|---------------|---------------|---------------------------------------|-----------|
+| Name          | name          | max_length=254                        | CharField |
+| Friendly Name | friendly_name | max_length=254, null=True, blank=True | CharField |
+
+#### Product Collection
+| Title       | Key in DB   | Form Validation type                                         | Data Type    |
+|-------------|-------------|--------------------------------------------------------------|--------------|
+| Category    | category    | 'Category', null=True, blank=True, on_delete=models.SET_NULL | ForeignKey   |
+| SKU         | sku         | max_length=254, null=True, blank=True                        | CharField    |
+| Name        | name        | max_length=254                                               | CharField    |
+| Description | description |                                                              | TextField    |
+| Has Option  | has_option  | default=False, null=True, blank=True                         |              |
+| Price       | price       | max_digits=6, decimal_places=2                               | DecimalField |
+| Image URL   | image_url   | max_length=1024, null=True, blank=True                       | URLField     |
+| Image       | image       | null=True, blank=True                                        | ImageField   |
+
 ## Technologies Used
 
 The technologies used were:
