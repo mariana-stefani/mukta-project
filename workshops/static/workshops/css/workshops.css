@@ -119,6 +119,31 @@ h4,
   color: #f7b78a;
 }
 
+/* workshop pagination */
+
+.workshop-pages {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.workshop-pages-btn {
+  color: #f7b78a;
+  border: 1px solid #f7b78a;
+}
+
+.workshop-pages-btn:hover {
+  color: #f7b78a;
+}
+
+.current-page {
+  color: #ffffff;
+  background-color: #f7b78a;
+}
+
+.current-page:hover {
+  color: #ffffff;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 414px) {
