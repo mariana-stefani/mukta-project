@@ -133,12 +133,12 @@ View my wireframes [here](#).
 #### Product Collection
 
 | _Title_     | _Key in DB_ | _Form Validation type_                                       | _Data Type_  |
-| ----------- | ----------- | ------------------------------------------------------------ | ------------ |
+|-------------|-------------|--------------------------------------------------------------|--------------|
 | Category    | category    | 'Category', null=True, blank=True, on_delete=models.SET_NULL | ForeignKey   |
 | SKU         | sku         | max_length=254, null=True, blank=True                        | CharField    |
 | Name        | name        | max_length=254                                               | CharField    |
-| Description | description |                                                              | TextField    |
-| Has Option  | has_option  | default=False, null=True, blank=True                         |              |
+| Description | description | max_length=254                                               | TextField    |
+| Has Option  | has_option  | default=False, null=True, blank=True                         | BooleanField |
 | Price       | price       | max_digits=6, decimal_places=2                               | DecimalField |
 | Image URL   | image_url   | max_length=1024, null=True, blank=True                       | URLField     |
 | Image       | image       | null=True, blank=True                                        | ImageField   |
