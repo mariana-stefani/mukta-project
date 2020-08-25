@@ -164,6 +164,20 @@ View my wireframes [here](#).
 | Content     | content     | max_length=45                  | TextField     |
 | Date Posted | date_posted | default=timezone.now           | DateTimeField |
 
+
+#### Workshop Collection
+| Title      | Key in DB  | Form Validation type                                                                                             | Data Type |
+|------------|------------|------------------------------------------------------------------------------------------------------------------|-----------|
+| Title      | title      | max_length=100                                                                                                   | CharField |
+| Date       | date       | "Date (YYYY-MM-DD)*", auto_now_add=False, auto_now=False, blank=True                                             | DateField |
+| Location   | location   | max_length=100                                                                                                   | CharField |
+| Time       | time       | max_length=10                                                                                                    | CharField |
+| Instructor | instructor | max_length=100                                                                                                   | CharField |
+| Content    | content    |                                                                                                                  | TextField |
+| Images     | images     | "Image URL*", max_length=1024, null=True, blank=True                                                             | URLField  |
+| Order      | order      | "Add 'order-md-first' or 'order-md-last' accordingly*", max_length=14, null=True, blank=True                     | CharField |
+| Divider    | divider    | "Add 'workshop-divider' (Unless it\'s the last workshop one on the page)*", max_length=16, null=True, blank=True | CharField |
+
 ## Technologies Used
 
 The technologies used were:
