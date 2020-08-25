@@ -27,7 +27,7 @@
             <p>{{ object.location }}</p>
             <p>{{ object.instructor }}</p>
         </div>
-        <img class="workshop-img" src="{{object.images}}">     
+        <img class="workshop-img" src="{{object.images}}" alt="Workshop image">     
     </div>
     <div class="workshop-btn-container">
         <a class="btn btn-outline-info" href="{% url 'workshop-update' object.id %}" aria-label="Update">Update</a>
