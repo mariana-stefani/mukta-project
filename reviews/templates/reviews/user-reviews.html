@@ -13,8 +13,11 @@
 
 {% block content %}
 <div class="container add-review-container">
-    <a class="btn add-review-btn" href="{% url 'review-create' %}"> Add New Review</a>
+    <h1 class="title">My Reviews</h1>
+    <a class="btn add-review-btn mt-0 mb-2" href="{% url 'review-create' %}"> Add New Review</a>
+    <a class="btn add-review-btn mt-0 mb-2" href="{% url 'reviews' %}"> Back to Reviews Page</a>
 </div>
+
 {% for review in reviews %}
     {% if user == review.user %}
         <div class="reviews-container container">
