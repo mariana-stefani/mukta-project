@@ -14,7 +14,7 @@
 {% block content %}
 {% if request.user.is_superuser %}
 <div class="container add-workshop">
-    <a class="btn add-workshop-btn" href="{% url 'workshop-create' %}"> Add New Workshop</a>
+    <a class="btn add-workshop-btn" href="{% url 'workshop-create' %}" aria-label="Add new workshop"> Add New Workshop</a>
 </div>
 {% endif %}
 <div class="container text-center workshop-container">
@@ -30,9 +30,9 @@
         <img class="workshop-img" src="{{object.images}}">     
     </div>
     <div class="workshop-btn-container">
-        <a class="btn btn-outline-info" href="{% url 'workshop-update' object.id %}">Update</a>
-        <a class="btn btn-outline-danger" href="{% url 'workshop-delete' object.id %}">Delete</a>
-        <a class="btn btn-outline-secondary" href="{% url 'workshops' %}" >Cancel</a>
+        <a class="btn btn-outline-info" href="{% url 'workshop-update' object.id %}" aria-label="Update">Update</a>
+        <a class="btn btn-outline-danger" href="{% url 'workshop-delete' object.id %}" aria-label="Delete">Delete</a>
+        <a class="btn btn-outline-secondary" href="{% url 'workshops' %}" aria-label="Cancel">Cancel</a>
     </div>
     
 </div>
