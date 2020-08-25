@@ -114,6 +114,15 @@ View my wireframes [here](#).
 | Original Bag     | original_bag    | null=False, blank=False, default=''                                                  | TextField     |
 | Stripe PID       | stripe_pid      | max_length=254, null=False, blank=False, default=''                                  | CharField     |
 
+#### OrderLineItem Collection
+| Title           | Key in DB      | Form Validation type                                                               | Data Type    |
+|-----------------|----------------|------------------------------------------------------------------------------------|--------------|
+| Order           | order          | Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems' | ForeignKey   |
+| Product         | product        | Product, null=False, blank=False, on_delete=models.CASCADE                         | ForeignKey   |
+| Product Colour  | product_colour | max_length=2, null=True, blank=True                                                | CharField    |
+| Quantity        | quantity       | null=False, blank=False, default=0                                                 | IntegerField |
+| Line Item Total | lineitem_total | max_digits=6, decimal_places=2, null=False, blank=False, editable=False            | DecimalField |
+
 ## Technologies Used
 
 The technologies used were:
