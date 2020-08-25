@@ -8,9 +8,8 @@ from django.contrib.auth.models import User
 
 class Review(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    friendly_name = models.CharField(max_length=50, null=False, blank=False, default='')
-    title = models.CharField(max_length=100)
-    content = models.TextField()
+    title = models.CharField(max_length=10)
+    content = models.TextField(max_length=45)
     date_posted = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
