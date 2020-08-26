@@ -12,9 +12,14 @@
 {% endblock banner %}
 
 {% block content %}
-    <div class="container-fluid">
-        <div class="row product-details-container">
+    <div class="container-fluid">     
+        <div class="row product-details-container">            
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                {% if request.user.is_superuser %}
+                    <div class="container add-product">
+                        <a class="btn add-product-btn" href="{% url 'product-create' %}" aria-label="Add new product"> Add New Product</a>
+                    </div>
+                {% endif %}
                 <div class="image-container my-5">
                     {% if product.image %}
                         <a href="{{ product.image.url }}" aria-label="{{ product.name }} image" rel="noopener" target="_blank""></a>
