@@ -486,15 +486,6 @@ a:link {
 }
 
 /* Media queries */
-/* @media only screen and (min-width: 1201px) {
-  body {
-    width: 85%;
-    margin: auto;
-    position: relative;
-  }
-} */
-
-/* Media queries */
 
 @media screen and (min-width: 992px) {
   .nav-active {
