@@ -33,7 +33,7 @@ h4,
 .workshop-title {
   padding-bottom: 1px;
   margin-bottom: 14px;
-  color: #f3995a;
+  color: #f3995a !important;
 }
 
 .workshop-title:hover {
