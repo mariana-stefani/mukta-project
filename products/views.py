@@ -3,9 +3,10 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from django.contrib.auth.mixins import UserPassesTestMixin
-from django.views.generic import CreateView, UpdateView
+from django.views.generic import CreateView, UpdateView, DeleteView
 from .models import Product, Category
 # Create your views here.
+
 
 def all_products(request):
     """ A view to display all products, including sorting and search queries """
@@ -42,8 +43,9 @@ def all_products(request):
             if not query:
                 messages.error(request, "Please enter a search criteria.")
                 return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query)
             products = products.filter(queries)
 
     currrent_sorting = f'{sort}_{direction}'
@@ -69,6 +71,7 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product-detail.html', context)
 
+
 class ProductCreateView(UserPassesTestMixin, CreateView):
     model = Product
     template_name = 'products/product-form.html'
@@ -80,6 +83,7 @@ class ProductCreateView(UserPassesTestMixin, CreateView):
     def test_func(self):
         return self.request.user.is_superuser
 
+
 class ProductUpdateView(UserPassesTestMixin, UpdateView):
     model = Product
     template_name = 'products/product-form.html'
@@ -87,6 +91,16 @@ class ProductUpdateView(UserPassesTestMixin, UpdateView):
     fields = ['category', 'sku', 'name',
               'description', 'has_option', 'price', 'image_url', 'image']
     success_url = '/products'
-    
+
+    def test_func(self):
+        return self.request.user.is_superuser
+
+
+class ProductDeleteView(UserPassesTestMixin, DeleteView):
+    model = Product
+    template_name = 'products/product-delete.html'
+    context_object_name = 'product-delete'
+    success_url = '/products'
+
     def test_func(self):
         return self.request.user.is_superuser
