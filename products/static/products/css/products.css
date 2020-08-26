@@ -134,6 +134,10 @@
   margin-top: 30px;
 }
 
+input#id_image.clearablefileinput.form-control-file {
+  background-color: #ffffff;
+}
+
 /* Media queries */
 @media screen and (width: 1024px) {
   .ipad-btn {
