@@ -100,7 +100,7 @@
 /* Product Form */
 
 .product-form {
-  background: #6a2640;
+  background: #f4e6ea;
   padding: 10px 20px;
   border: solid 5px #6a2640;
   margin-top: 30px;
@@ -112,6 +112,7 @@
 .product-header {
   color: #6a2640;
   font-weight: bolder;
+  padding-top: 30px;
 }
 
 .add-product {
