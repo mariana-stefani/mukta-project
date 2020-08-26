@@ -17,7 +17,7 @@
             {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="product-header mb-4">Delete Product</legend>
-                <h4>Do you want to delete product <span class="span-italic">"{{ object.title }}"</span> ?</h4>
+                <h4>Do you want to delete product <span class="span-italic">"{{ object.name }}"</span> ?</h4>
             </fieldset>
             <div class="form-group">
                 <button class="btn btn-outline-danger" type="submit">Yes, Delete</button>
