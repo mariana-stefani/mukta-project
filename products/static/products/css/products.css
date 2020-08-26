@@ -130,6 +130,10 @@
   color: #ffffff;
 }
 
+.product-btn-container {
+  margin-top: 30px;
+}
+
 /* Media queries */
 @media screen and (width: 1024px) {
   .ipad-btn {
