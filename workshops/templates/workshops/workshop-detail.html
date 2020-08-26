@@ -42,11 +42,13 @@
         </div>
         <img class="workshop-img" src="{{object.images}}" alt="Workshop image">     
     </div>
-    <div class="workshop-btn-container">
-        <a class="btn btn-outline-info" href="{% url 'workshop-update' object.id %}" aria-label="Update">Update</a>
-        <a class="btn btn-outline-danger" href="{% url 'workshop-delete' object.id %}" aria-label="Delete">Delete</a>
-        <a class="btn btn-outline-secondary" href="{% url 'workshops' %}" aria-label="Cancel">Cancel</a>
-    </div>
+    {% if request.user.is_superuser %}
+        <div class="workshop-btn-container">
+            <a class="btn btn-outline-info" href="{% url 'workshop-update' object.id %}" aria-label="Update">Update</a>
+            <a class="btn btn-outline-danger" href="{% url 'workshop-delete' object.id %}" aria-label="Delete">Delete</a>
+            <a class="btn btn-outline-secondary" href="{% url 'workshops' %}" aria-label="Cancel">Cancel</a>
+        </div>
+    {% endif %}
     
 </div>
 {% endblock content %}
