@@ -34,8 +34,8 @@
     {% endfor %}
     {% endif %}
     {% if request.user.is_superuser %}
-        <div class="container add-product">
-            <a class="btn add-product-btn" href="{% url 'product-create' %}" aria-label="Add new product"> Add New Product</a>
+        <div class="container add-product title-container">
+            <a class="btn add-product-btn" href="{% url 'product-create' %}" aria-label="Add new workshop"> Add New Workshop</a>
         </div>
     {% endif %}
     <div class="container-fluid">
