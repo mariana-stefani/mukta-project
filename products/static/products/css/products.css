@@ -97,6 +97,38 @@
   color: #6a2640;
 }
 
+/* Product Form */
+
+.product-form {
+  background: #6a2640;
+  padding: 10px 20px;
+  border: solid 5px #6a2640;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 85% !important;
+}
+
+.product-header {
+  color: #6a2640;
+  font-weight: bolder;
+}
+
+.add-product {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.add-product-btn {
+  color: #6a2640;
+  border: solid 2px #6a2640;
+}
+
+.add-product-btn:hover {
+  background-color: #6a2640;
+  color: #ffffff;
+}
+
 /* Media queries */
 @media screen and (width: 1024px) {
   .ipad-btn {
