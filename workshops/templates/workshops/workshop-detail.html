@@ -19,13 +19,26 @@
 {% endif %}
 <div class="container text-center workshop-container">
     <div class="row">
-        <div class="col-lg-4 col-10 workshop-desc">
-            <h2 class="workshop-header">{{ object.title }}</h2>
-            <h4>{{ object.content }}</h4>
-            <p>{{ object.date|date:"D, d F o" }}</p>
-            <p>{{ object.time }}</p>
-            <p>{{ object.location }}</p>
-            <p>{{ object.instructor }}</p>
+        <div id="workshop-desc" class="col-lg-6 col-10 workshop-desc">
+            <h2><a class="workshop-title" aria-label="Workshop title">
+                {{ object.title }}
+            </a></h2>
+            <h4> By {{ object.instructor }}</h4>
+            <p class="content-p mb-5">{{ object.content|safe }}</p>
+            <div class="row">
+                <div class="workshop-box">
+                    <p class="p-title">When</p>
+                    <p>{{ object.date|date:"D, d F o" }}</p>
+                </div>
+                <div class="workshop-box">
+                    <p class="p-title">Time</p>
+                    <p>{{ object.time }}</p>
+                </div>
+                <div class="workshop-box">
+                    <p class="p-title">Where</p>
+                    <p>{{ object.location }}</p>
+                </div>
+            </div>
         </div>
         <img class="workshop-img" src="{{object.images}}" alt="Workshop image">     
     </div>
