@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from django.contrib.auth.mixins import UserPassesTestMixin
-from django.views.generic import CreateView
+from django.views.generic import CreateView, UpdateView
 from .models import Product, Category
 # Create your views here.
 
@@ -71,13 +71,22 @@ def product_detail(request, product_id):
 
 class ProductCreateView(UserPassesTestMixin, CreateView):
     model = Product
-    product = Product
-
     template_name = 'products/product-form.html'
     context_object_name = 'product-create'
     fields = ['category', 'sku', 'name',
               'description', 'has_option', 'price', 'image_url', 'image']
     success_url = '/products'
 
+    def test_func(self):
+        return self.request.user.is_superuser
+
+class ProductUpdateView(UserPassesTestMixin, UpdateView):
+    model = Product
+    template_name = 'products/product-form.html'
+    context_object_name = 'product-update'
+    fields = ['category', 'sku', 'name',
+              'description', 'has_option', 'price', 'image_url', 'image']
+    success_url = '/products'
+    
     def test_func(self):
         return self.request.user.is_superuser
