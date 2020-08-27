@@ -190,4 +190,6 @@ STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'contact@mukta.com'
 
+
+# Heroku Postgres
 django_heroku.settings(locals())
