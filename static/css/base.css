@@ -37,12 +37,12 @@ a {
 }
 
 #main-nav {
-  font-size: 21px;
-  margin-top: 80px;
+  font-size: 1.3125rem;
+  margin-top: 5rem;
 }
 
 .main-nav {
-  margin: 0 20px;
+  margin: 0 1.25rem;
 }
 
 .navbar-light .navbar-toggler {
@@ -78,12 +78,12 @@ input[name="q"]::placeholder {
 
 .title {
   color: #655669;
-  margin: 30px 0;
+  margin: 1.875rem 0;
   text-align: left;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 3px;
-  font-size: 40px;
+  letter-spacing: 0.1875rem;
+  font-size: 2.5rem;
 }
 
 /* Buttons */
@@ -192,8 +192,8 @@ a.links:hover {
 
 .message-container {
   position: fixed;
-  top: 72px;
-  right: 15px;
+  top: 4.5rem;
+  right: 0.9375rem;
   z-index: 9999;
 }
 
@@ -220,8 +220,8 @@ a.links:hover {
   border-right: 4px solid transparent;
   border-bottom: 10px solid black;
   position: absolute;
-  top: -10px;
-  right: 36px;
+  top: -0.625rem;
+  right: 2.25rem;
 }
 
 /* Convenience classes - colors copied from Bootstrap */
@@ -311,7 +311,7 @@ footer {
 }
 
 .footer-container {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .social-links {
@@ -335,7 +335,7 @@ footer {
   padding: 0.75rem 0;
   border-radius: 50%;
   font-size: 1.25rem;
-  line-height: 7px;
+  line-height: 0.4375rem;
   background-color: #ffffff;
   color: #736177;
   border: solid 0.0625rem #736177;
@@ -435,7 +435,7 @@ a:link {
   }
 
   .link-mobile {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .navbar-toggler {
@@ -444,7 +444,7 @@ a:link {
   }
 
   .navbar {
-    padding: 10px;
+    padding: 0.625rem;
   }
 
   .dropdown-menu {
@@ -455,7 +455,7 @@ a:link {
 @media screen and (max-width: 768px) {
   .navbar-nav {
     background-color: #bdb1bf;
-    font-size: 15px;
+    font-size: 0.9375rem;
     width: max-content !important;
     float: left;
   }
@@ -465,6 +465,6 @@ a:link {
   }
 
   .title {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
