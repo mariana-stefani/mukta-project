@@ -5,6 +5,7 @@ from .models import Workshop
 
 
 class WorkshopListView(ListView):
+    """ A view to display all workshops on the workshops page """
     model = Workshop
     template_name = 'workshops/workshops.html'
     context_object_name = 'workshops'
@@ -12,12 +13,14 @@ class WorkshopListView(ListView):
 
 
 class WorkshopDetailView(DetailView):
+    """ A view to display a single workshop on workshop-detail page """
     model = Workshop
     template_name = 'workshops/workshop-detail.html'
     context_object_name = 'workshop-detail'
 
 
 class WorkshopCreateView(UserPassesTestMixin, CreateView):
+    """ A view to create a new workshop on workshop-form page """
     model = Workshop
     template_name = 'workshops/workshop-form.html'
     context_object_name = 'workshop-create'
@@ -30,6 +33,7 @@ class WorkshopCreateView(UserPassesTestMixin, CreateView):
 
 
 class WorkshopUpdateView(UserPassesTestMixin, UpdateView):
+     """ A view to update a workshop on workshop-form page """
     model = Workshop
     template_name = 'workshops/workshop-form.html'
     context_object_name = 'workshop-update'
@@ -42,6 +46,7 @@ class WorkshopUpdateView(UserPassesTestMixin, UpdateView):
 
 
 class WorkshopDeleteView(UserPassesTestMixin, DeleteView):
+    """ A view to delete a workshop on workshop-delete page """
     model = Workshop
     template_name = 'workshops/workshop-delete.html'
     context_object_name = 'workshop-delete'
