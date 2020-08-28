@@ -1,7 +1,7 @@
 /* Title */
 
 .title {
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 
 /* Product qty */
@@ -13,7 +13,7 @@
 }
 
 .btn-bag {
-  padding: 5px;
+  padding: 0.3125rem;
   border: 1px solid #736177;
 }
 
