@@ -18,21 +18,7 @@
               <h4 class="my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
             </div>            
         </div> 
-    </div>     
-    {% if messages %} 
-    {% for message in messages %}
-        <div aria-live="polite" aria-atomic="true" class=" d-flex justify-content-center align-items-center">
-            <div class="msg-container red-msg" role="alert" aria-live="assertive" data-delay="4500" aria-atomic="true">
-                <div class="red-msg-i">
-                    <i class="far fa-times-circle fa-4x animated rotateIn"></i>
-                </div>
-                <div class="msg-body red-msg-body">
-                    {{ message }}
-                </div>
-            </div>
-        </div>
-    {% endfor %}
-    {% endif %}
+    </div> 
     {% if request.user.is_superuser %}
         <div class="container add-product title-container">
             <a class="btn add-product-btn" href="{% url 'product-create' %}" aria-label="Add new product"> Add New Product</a>
