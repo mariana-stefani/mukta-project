@@ -68,6 +68,7 @@ input[name="q"]::placeholder {
   display: block;
 }
 
+
 /* Span */
 
 .span-italic {
@@ -466,5 +467,12 @@ a:link {
 
   .title {
     font-size: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-show{
+    background-color: #bdb1bf;
+    position: fixed;
   }
 }
