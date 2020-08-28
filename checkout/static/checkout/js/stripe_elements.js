@@ -1,4 +1,6 @@
-/*
+/*  
+    JS for Stripe
+    
     Core logic/payment flow used here can be found on:
     https://stripe.com/docs/payments/accept-a-payment
 
