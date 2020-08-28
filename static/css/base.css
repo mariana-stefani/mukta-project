@@ -17,12 +17,61 @@ a {
   color: #3f8fa8;
 }
 
-.span-italic {
-  font-style: italic;
+/* Navbar */
+
+.dropdown-menu {
+  background-color: #bdb1bf;
+}
+.navbar {
+  background-color: transparent;
+}
+
+.bg-img {
+  height: 70vh;
+  width: fit-content;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  text-transform: uppercase;
+}
+
+#main-nav {
+  font-size: 21px;
+  margin-top: 80px;
+}
+
+.main-nav {
+  margin: 0 20px;
+}
+
+.navbar-light .navbar-toggler {
+  background-color: #ffffff !important;
+}
+
+.dropdown-item {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #bdb1bf !important;
+}
+
+input[name="q"]::placeholder {
+  color: #aab7c4;
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+/* Span */
+
+.span-italic {
+  font-style: italic;
 }
 
 /* Title */
@@ -112,59 +161,14 @@ a.links:hover {
   border: 1px solid black !important;
 }
 
+/* Icons */
+
 .icon {
   align-items: center;
   display: inline-flex;
   justify-content: center;
   height: 1.5rem;
   width: 1.5rem;
-}
-
-/* Navbar */
-
-.dropdown-menu {
-  background-color: #bdb1bf;
-}
-.navbar {
-  background-color: transparent;
-}
-
-.bg-img {
-  height: 70vh;
-  width: fit-content;
-}
-
-.nav-link {
-  color: #ffffff !important;
-  text-transform: uppercase;
-}
-
-#main-nav {
-  font-size: 21px;
-  margin-top: 80px;
-}
-
-.main-nav {
-  margin: 0 20px;
-}
-
-.navbar-light .navbar-toggler {
-  background-color: #ffffff !important;
-}
-
-.dropdown-item {
-  color: #ffffff;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.dropdown-item.active,
-.dropdown-item:active {
-  background-color: #bdb1bf !important;
-}
-
-input[name="q"]::placeholder {
-  color: #aab7c4;
 }
 
 /* Shopping bag */
@@ -184,7 +188,7 @@ input[name="q"]::placeholder {
   color: #ffffff;
 }
 
-/* Toasts */
+/* Toasts - Messages */
 
 .message-container {
   position: fixed;
@@ -208,6 +212,7 @@ input[name="q"]::placeholder {
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+
 .arrow-up {
   width: 0;
   height: 0;
@@ -220,6 +225,7 @@ input[name="q"]::placeholder {
 }
 
 /* Convenience classes - colors copied from Bootstrap */
+
 .arrow-primary {
   border-bottom-color: #007bff !important;
 }
@@ -258,7 +264,8 @@ input[name="q"]::placeholder {
   overflow-y: auto;
 }
 
-/*__ Back to top button --*/
+/* Back to top button */
+
 #top-btn {
   position: fixed;
   bottom: 1.25rem;
