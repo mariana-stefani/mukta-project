@@ -351,3 +351,23 @@ To purchase a product, use the information below:
 | Card Number      | MM/YY | CVC | Post Code |
 |------------------|-------|-----|-----------|
 | 4000058260000005 | 04/24 | 744 | SW1A 0AA  |
+
+## Bugs
+
+### Solved bugs
+
+- **Bug 1**
+
+  - **Problem:** The option to remove the products from the shopping bag was not working.
+  - **First try:** Added a missing ***/*** to *remove/<item_id>/* on bag/urls.py
+  - **Second try:** Updated the JQuery script from slim to minified.
+  - **Solution:** Moved JavaScript from bag.js to *{% block postloadjs %}* block on bag.html
+
+- **Bug 2**
+
+  - **Problem:** Images were not loading to Heroku after uploaded on AWS S3.
+  - **Solution:** Updated the image paths for {{MEDIA_URL}}.
+
+### Unsolved bugs
+
+- User can add more than 99 items when updating the shopping bag.
