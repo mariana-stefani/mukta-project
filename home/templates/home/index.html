@@ -47,11 +47,19 @@
         </div>
         <div class="row">
             <div class="index-p col-lg-6 col-10">
-                <p>When creating an account on our website you will be able to check the best yoga and wellbeing workshops happening around London.
-                </p>
-                <div class="index-btn float-left">
-                    <a class="btn index-btn-outline" aria-label="Register here" href="{% url 'account_signup' %}">Register here</a>
-                </div>
+                {% if user.is_authenticated %}
+                    <p>Here you will be able to check the best yoga and wellbeing workshops happening around London.
+                    </p>
+                    <div class="index-btn float-left">
+                        <a class="btn index-btn-outline" aria-label="Check our workshops" href="{% url 'workshops' %}">Check our workshops</a>
+                    </div>
+                {% else %}
+                    <p>When creating an account on our website you will be able to check the best yoga and wellbeing workshops happening around London.
+                    </p>
+                    <div class="index-btn float-left">
+                        <a class="btn index-btn-outline" aria-label="Register here" href="{% url 'account_signup' %}">Register here</a>
+                    </div>
+                {% endif %}
             </div>
             <img class="index-img" alt="Yoga pose image 3" src="{{MEDIA_URL}}index3.png">     
         </div>
