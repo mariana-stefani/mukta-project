@@ -1,8 +1,10 @@
 /* Title */
 
-.title{
+.title {
   margin-top: 50px;
 }
+
+/* Checkout form */
 
 .fieldset-label {
   position: relative;
@@ -14,6 +16,8 @@
   color: #000;
   border: 1px solid #000;
 }
+
+/* Stripe */
 
 .StripeElement,
 .stripe-style-input {
