@@ -200,6 +200,7 @@ The technologies used were:
 - [Django](https://www.djangoproject.com/)
 - [Font Awesome](https://fontawesome.com/icons)
 - [Google Fonts](https://fonts.google.com/)
+- [Google Maps](https://developers.google.com/maps/documentation/javascript/tutorial)
 - [JQuery](https://jquery.com)
 - [Psycopg2](https://pypi.org/project/psycopg2/)
 - [Stripe](https://stripe.com/gb)
@@ -210,6 +211,7 @@ The technologies used were:
 - [Heroku](http://www.heroku.com)
 - [Moqups](https://moqups.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
+- [Pixabay](https://pixabay.com/)
 
 ### Databases:
 
