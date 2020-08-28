@@ -38,7 +38,7 @@ h4,
 
 .workshop-title:hover {
   color: #f3995a;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 .workshop-img {
@@ -90,7 +90,7 @@ h4,
 
 .workshop-header {
   color: #f3995a;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 .add-workshop {
