@@ -1,13 +1,10 @@
-/*  
-    JS for Stripe
-    
-    Core logic/payment flow used here can be found on:
+/**
+ * JS for Stripe
+ * Core logic/payment flow used here can be found on:
     https://stripe.com/docs/payments/accept-a-payment
-
-    CSS from here: 
+ * CSS from here: 
     https://stripe.com/docs/stripe-js
-*/
-
+ */
 let stripePublicKey = $("#id_stripe_public_key").text().slice(1, -1);
 let clientSecret = $("#id_client_secret").text().slice(1, -1);
 let stripe = Stripe(stripePublicKey);
@@ -30,7 +27,9 @@ let style = {
 let card = elements.create("card", { style: style });
 card.mount("#card-element");
 
-// Handle validation error in realtime on the card element
+/**
+ * Handle validation error in realtime on the card element
+ */
 card.addEventListener("change", function (event) {
   let errorDiv = document.getElementById("card-errors");
   if (event.error) {
@@ -46,7 +45,9 @@ card.addEventListener("change", function (event) {
   }
 });
 
-// Handle form submit
+/**
+ * Handle form submit
+ */
 let form = document.getElementById("payment-form");
 
 form.addEventListener("submit", function (ev) {
@@ -57,7 +58,9 @@ form.addEventListener("submit", function (ev) {
   $("#loading-overlay").fadeToggle(100);
 
   let saveInfo = Boolean($("#id-save-info").attr("checked"));
-  // From using {% csrf_token %} in the form
+  /**
+   * From using {% csrf_token %} in the form
+   */
   let csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
   let postData = {
     csrfmiddlewaretoken: csrfToken,
@@ -119,7 +122,9 @@ form.addEventListener("submit", function (ev) {
         });
     })
     .fail(function () {
-      // just reload the page, the error will be in django messages
+      /**
+       * just reload the page, the error will be in django messages
+       */
       location.reload();
     });
 });
