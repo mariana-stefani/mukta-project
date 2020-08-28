@@ -3,8 +3,6 @@ from django.contrib.auth.mixins import UserPassesTestMixin
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Workshop
 
-# Create your views here.
-
 
 class WorkshopListView(ListView):
     model = Workshop

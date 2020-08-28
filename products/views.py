@@ -5,7 +5,6 @@ from django.db.models.functions import Lower
 from django.contrib.auth.mixins import UserPassesTestMixin
 from django.views.generic import CreateView, UpdateView, DeleteView
 from .models import Product, Category
-# Create your views here.
 
 
 def all_products(request):

@@ -3,8 +3,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import ListView, CreateView, DetailView, UpdateView, DeleteView
 from .models import Review
 
-# Create your views here.
-
 
 class ReviewListView(ListView):
     model = Review
