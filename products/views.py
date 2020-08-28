@@ -72,6 +72,7 @@ def product_detail(request, product_id):
 
 
 class ProductCreateView(UserPassesTestMixin, CreateView):
+    """ A view to create a new product on product-form page """
     model = Product
     template_name = 'products/product-form.html'
     context_object_name = 'product-create'
@@ -84,6 +85,7 @@ class ProductCreateView(UserPassesTestMixin, CreateView):
 
 
 class ProductUpdateView(UserPassesTestMixin, UpdateView):
+    """ A view to update an existing product on product-form page """
     model = Product
     template_name = 'products/product-form.html'
     context_object_name = 'product-update'
@@ -96,6 +98,7 @@ class ProductUpdateView(UserPassesTestMixin, UpdateView):
 
 
 class ProductDeleteView(UserPassesTestMixin, DeleteView):
+    """ A view to delete a product on product-delete page """
     model = Product
     template_name = 'products/product-delete.html'
     context_object_name = 'product-delete'
