@@ -20,11 +20,12 @@
 .btn-bag:hover,
 .btn-bag:active,
 .btn-bag:focus {
-  background: #F8F7F8;
+  background: #f8f7f8;
   border: 1px solid #736177 !important;
 }
 
 /* Media queries */
+
 @media (max-width: 991px) {
   .btn-outline-dark,
   .btn-dark {
