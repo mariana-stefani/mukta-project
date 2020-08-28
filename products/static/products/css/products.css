@@ -46,13 +46,13 @@
 
 .product-name {
   color: #6a2640;
-  font-weight: bolder;
+  font-weight: 700;
   font-size: 23px;
 }
 
 .product-name-small {
   color: #6a2640;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 /* Buttons */
@@ -68,7 +68,7 @@
 .btn-dark:focus {
   background: #ffff;
   color: #6a2640 !important;
-  font-weight: bolder !important;
+  font-weight: 700 !important;
   border: 1px solid #6a2640 !important;
 }
 
@@ -83,7 +83,7 @@
 .btn-outline-dark:focus {
   background: #6a2640;
   color: #ffff !important;
-  font-weight: bolder !important;
+  font-weight: 700 !important;
 }
 
 /* Back to top btn */
@@ -111,7 +111,7 @@
 
 .product-header {
   color: #6a2640;
-  font-weight: bolder;
+  font-weight: 700;
   padding-top: 30px;
 }
 
