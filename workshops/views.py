@@ -33,7 +33,7 @@ class WorkshopCreateView(UserPassesTestMixin, CreateView):
 
 
 class WorkshopUpdateView(UserPassesTestMixin, UpdateView):
-     """ A view to update a workshop on workshop-form page """
+    """ A view to update a workshop on workshop-form page """
     model = Workshop
     template_name = 'workshops/workshop-form.html'
     context_object_name = 'workshop-update'
