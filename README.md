@@ -331,3 +331,23 @@ The technologies used were:
 
 - **Plan 2:** Superuser clicks on **_delete_** button and is redirected to the delete workshop page. If clicks the **_Yes, Delete_** button, the workshops is deleted. If clicks the **_Cancel_** button is redirected to the workshops page.
 - **Result:** This test have passed.
+
+## Note for the assessor
+
+To test the CRUDs functionalities as **normal user**:
+
+| **Username** | **Password**     |
+| ------------ | ---------------- |
+| testuser     | test4321         |
+
+To test the CRUDs functionalities as **superuser**:
+
+| **Username**      | **Password**          |
+| ----------------- | --------------------- |
+| testsuperuser     | superuser4321         |
+
+To purchase a product, use the information below:
+
+| Card Number      | MM/YY | CVC | Post Code |
+|------------------|-------|-----|-----------|
+| 4000058260000005 | 04/24 | 744 | SW1A 0AA  |
