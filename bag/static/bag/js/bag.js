@@ -14,7 +14,7 @@ $(".remove-item").click(function (e) {
   let itemId = $(this).attr("id").split("remove_")[1];
   let colour = $(this).data("product_colour");
   let url = `/bag/remove/${itemId}/`;
-  let data = { csrfmiddlewaretoken: csrfToken, product_colour: colour };
+  let data = { 'csrfmiddlewaretoken': csrfToken, 'product_colour': colour };
 
   $.post(url, data).done(function () {
     location.reload();
