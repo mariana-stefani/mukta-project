@@ -336,20 +336,20 @@ The technologies used were:
 
 To test the CRUDs functionalities as **normal user**:
 
-| **Username** | **Password**     |
-| ------------ | ---------------- |
-| testuser     | test4321         |
+| **Username** | **Password** |
+| ------------ | ------------ |
+| testuser     | test4321     |
 
 To test the CRUDs functionalities as **superuser**:
 
-| **Username**      | **Password**          |
-| ----------------- | --------------------- |
-| testsuperuser     | superuser4321         |
+| **Username**  | **Password**  |
+| ------------- | ------------- |
+| testsuperuser | superuser4321 |
 
 To purchase a product, use the information below:
 
 | Card Number      | MM/YY | CVC | Post Code |
-|------------------|-------|-----|-----------|
+| ---------------- | ----- | --- | --------- |
 | 4000058260000005 | 04/24 | 744 | SW1A 0AA  |
 
 ## Bugs
@@ -359,15 +359,59 @@ To purchase a product, use the information below:
 - **Bug 1**
 
   - **Problem:** The option to remove the products from the shopping bag was not working.
-  - **First try:** Added a missing ***/*** to *remove/<item_id>/* on bag/urls.py
+  - **First try:** Added a missing **_/_** to _remove/<item_id>/_ on bag/urls.py
   - **Second try:** Updated the JQuery script from slim to minified.
-  - **Solution:** Moved JavaScript from bag.js to *{% block postloadjs %}* block on bag.html
+  - **Solution:** Moved JavaScript from bag.js to _{% block postloadjs %}_ block on bag.html
 
 - **Bug 2**
 
-  - **Problem:** Images were not loading to Heroku after uploaded on AWS S3.
+  - **Problem:** Images were not loading to **Heroku** after uploaded on AWS S3.
   - **Solution:** Updated the image paths for {{MEDIA_URL}}.
 
 ### Unsolved bugs
 
 - User can add more than 99 items when updating the shopping bag.
+
+## Deployment
+
+- The deployment instructions were written for a **_macOS_** specifically. The commands and installation may differ if you are in a different Operating System, please follow the guides for the same according to their specs.
+
+### Run the Code Locally
+
+- The following **must** be installed in your machine:
+
+  - [Homebrew](https://docs.brew.sh/Installation) 
+  - [Git](https://www.atlassian.com/git/tutorials/install-git)
+  - [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+  - [PIP](https://pip.pypa.io/en/stable/installing/)
+  - [Python 3](https://www.python.org/downloads/)
+
+- You'll also **must** create an account on [Stripe](https://stripe.com/).
+
+- This project was developed using [Visual Studio Code](https://code.visualstudio.com/) IDE and cloned to a [Git Repository](https://github.com/mariana-stefani/mukta-project).
+
+- To clone a **Github** repository:
+
+    * Open the [repository](https://github.com/mariana-stefani/mukta-project) on **Github** and click on ***"Clone or download"*** and copy the URL.
+
+    * On VSCode open the ***"Command Palette"***, select ***"Git: Clone"*** and paste the URL.
+
+- Install Pipenv Globally:
+  _ If needed, upgrade pip from your computer's terminal by running `$ python3.8 -m pip install pip --upgrade`.
+  _ To install Pipenv globally, run from your computer's terminal `$ python3.8 -m pip install pipenv`.
+- Create a Virtual Environment with Pipenv:
+  - Open VSCode and from its terminal make a _Projects_ directory by running `$ mkdir Projects`.
+  - Create an empty folder for this project inside the _˜/Projects_ directory by running:
+    `mkdir ˜/Projects/Portfolio pipenv install --python 3.8`
+    _ Initialize the Virtual Environment: `$ cd ~/Projects/Mukta`.
+    _ Activate the Virtual Environment: `$ pipenv shell`.
+    _ On VSCode dialogue will be shown asking if you'd like to select this new virtual environment for the workspace folder. Click yes.
+    _ Open the **"Command Palette"** and select **_"Python: Select Interpreter"_**. 
+    _ Select the virtual environment that you just created.
+- Install the necessary libraries by running `$ pip3 install -r requirements.txt` from VSCode terminal.
+- Create a file called **_"env.py"_** and store your **_SECRET_KEY_** variable; your **_DATABASE_URL_** to link to your database; the **_STRIPE_PUBLIC_KEY_**, THE **_STRIPE_SECRET_KEY_** and **_STRIPE_WH_SECRET_** for **Stripe**; the **_AWS_ACCESS_KEY_ID_** and **_AWS_SECRET_ACESS_KEY_** for AWS S3 and **_EMAIL_HOST_USER_** and **_EMAIL_HOST_PASS_** for the confirmation emails.
+  - Do not commit this file to **Git**. 
+  - To hide your environment variables, create a file called **_".gitignore"_** and write **_"env.py"_** on this file.
+- Run your application with the command `$ python3 app.py`.
+- The project can be viewed at **_Http://127.0.0.1:8000_**.
+
