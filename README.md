@@ -409,9 +409,50 @@ To purchase a product, use the information below:
     _ Open the **"Command Palette"** and select **_"Python: Select Interpreter"_**. 
     _ Select the virtual environment that you just created.
 - Install the necessary libraries by running `$ pip3 install -r requirements.txt` from VSCode terminal.
-- Create a file called **_"env.py"_** and store your **_SECRET_KEY_** variable; your **_DATABASE_URL_** to link to your database; the **_STRIPE_PUBLIC_KEY_**, THE **_STRIPE_SECRET_KEY_** and **_STRIPE_WH_SECRET_** for **Stripe**; the **_AWS_ACCESS_KEY_ID_** and **_AWS_SECRET_ACESS_KEY_** for AWS S3 and **_EMAIL_HOST_USER_** and **_EMAIL_HOST_PASS_** for the confirmation emails.
+- Create a file called **_"env.py"_** and store your **_SECRET_KEY_** variable; your **_DATABASE_URL_** to link to your database; the **_STRIPE_PUBLIC_KEY_**, THE **_STRIPE_SECRET_KEY_** and **_STRIPE_WH_SECRET_** for **Stripe**; the **_AWS_ACCESS_KEY_ID_** and **_AWS_SECRET_ACESS_KEY_** for **AWS S3** and **_EMAIL_HOST_USER_** and **_EMAIL_HOST_PASS_** for the confirmation emails.
   - Do not commit this file to **Git**. 
   - To hide your environment variables, create a file called **_".gitignore"_** and write **_"env.py"_** on this file.
-- Run your application with the command `$ python3 app.py`.
+- Enter the following command in the terminal to migrate models into the database: `$ python3 manage.py migrate`
+- Create a *superuser* by entering `$ python3 manage.py createsuperuser`
+- Run your application with the command `$ python3 manage.py runserver`.
 - The project can be viewed at **_Http://127.0.0.1:8000_**.
 
+### Heroku Deployment
+
+#### To deploy this project to Heroku follow the steps below:
+
+1. Install **Heroku CLI** in your computer by running `$ brew tap heroku/brew && brew install heroku`.
+2. On VSCode terminal run the command `$ pip3 freeze --local > requirements.txt` to create a **_requirements.txt_** file.
+3. Run the command `$ echo web: python app.py > Procfile` to create a **_Procfile_**.
+4. Deploy each change to **Github**:
+
+```
+$ git add .
+$ git commit -m 'Commit message'
+$ git push
+```
+
+5. Create a free account on the [Heroku website](https://signup.heroku.com).
+6. On your **Heroku** dashboard click on the **_New_** button and then on **_Create new app_**. Give it a unique name and select Europe as the region.
+7. From your dashboard click on **_Settings_** > **_Reveal Config Vars_**.
+8. Add the following config vars:
+
+| _KEY_                 | _VALUE_                          |
+|-----------------------|----------------------------------|
+| AWS_ACCESS_KEY_ID     | <your_aws_access_key_id>         |
+| AWS_SECRET_ACCESS_KEY | <your_aws_secret_key_access_key> |
+| DATABASE_URL          | <your_database_url>              |
+| EMAIL_HOST_PASS       | <your_email_host_pass>           |
+| EMAIL_HOST_USER       | <your_email_host_user>           |
+| SECRET_KEY            | <your_secret_key>                |
+| STRIPE_PUBLIC_KEY     | <your_stripe_public_key>         |
+| STRIPE_SECRET_KEY     | <your_stripe_secret_key>         |
+| STRIPE_WH_SECRET      | <your_stripe_wh_secret>          |
+| USE_AWS               | True                             |
+
+
+6. On VSCode terminal run the command `$ heroku login` to log in to your account.
+7. Link **Heroku** to **Git** with the following by running `$ heroku git:remote -a <yourproject>`.
+8. Deploy your project to **Heroku** by running `$ git push heroku master`.
+9. Your project is now successfully deployed to **Heroku**.
+10. On your **Heroku** dashboard click on the button **_Open app_** on the top right side to view your deployed project.
