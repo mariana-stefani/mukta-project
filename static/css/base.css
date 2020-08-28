@@ -68,7 +68,6 @@ input[name="q"]::placeholder {
   display: block;
 }
 
-
 /* Span */
 
 .span-italic {
@@ -192,7 +191,11 @@ a.links:hover {
 /* Toasts - Messages */
 
 .message-container {
-  position: fixed;
+  position: relative;
+}
+
+.message-container {
+  position: absolute;
   top: 4.5rem;
   right: 0.9375rem;
   z-index: 9999;
@@ -471,7 +474,7 @@ a:link {
 }
 
 @media screen and (max-width: 991px) {
-  .nav-show{
+  .nav-show {
     background-color: #bdb1bf;
     position: fixed;
   }
