@@ -135,7 +135,7 @@ The user model used in this project is provided by Django. You can find more inf
 #### The Product Model
 
 | _Title_     | _Key in DB_ | _Form Validation type_                                       | _Data Type_  |
-|-------------|-------------|--------------------------------------------------------------|--------------|
+| ----------- | ----------- | ------------------------------------------------------------ | ------------ |
 | Category    | category    | 'Category', null=True, blank=True, on_delete=models.SET_NULL | ForeignKey   |
 | SKU         | sku         | max_length=254, null=True, blank=True                        | CharField    |
 | Name        | name        | max_length=254                                               | CharField    |
@@ -215,3 +215,119 @@ The technologies used were:
 
 - [PostgreSQL - Production](https://www.postgresql.org/)
 - [SQlite3 - Development](https://www.sqlite.org/index.html)
+
+## Testing
+
+- HTML was checked on [HTML Validator](https://validator.w3.org/).
+- CSS was checked on [CSS Validator](http://csslint.net/).
+- JavaScript was checked on [JS Hint Validator](https://jshint.com/).
+- JSON was checked on [JSON Validator](https://jsonlint.com/).
+- The responsiveness of this website was tested constantly during the development process. It was tested in real desktops, tablets and mobile devices as well as on Google Chrome developer tools.
+- The website was tested on different browsers such as Google Chrome, Safari, Internet Explorer and Mozilla Firefox.
+- I asked friends and family members to test the functionalities of the website on desktop and mobile devices. Their feedback was used to improve website usability.
+
+### Tests
+
+**Navbar Links**
+
+- **Plan:** User clicks on each navbar link and is directed to chosen page.
+- **Result:** This test passed.
+
+**Registration Page**
+
+- **Plan:** User will fill the registration form and will receive a confirmation e-mail.
+- **Result:** This test passed.
+
+**Login Page**
+
+- **Plan:** After clicking on the verification link on the e-mail, the user can login with username or e-mail and password and is directed to the idex page.
+- **Result:** This test passed.
+
+**My Profile Page - When User is Logged In**
+
+- **Plan:** If the user have purshased someting in the past, they will have their order gistory and their details displayed.
+- **Result:** This test has passed.
+
+**Products Button**
+
+- **Plan:** User clicks the **_“Check our products”_** button and is directed to the products page.
+- **Result:** This test has passed.
+
+**Workshop Button - When User is Logged In**
+
+- **Plan:** User clicks the **_“Check our workshops”_** button and is directed to the workshops page.
+- **Result:** This test has passed.
+
+**Workshop Button - When User isn't Logged In**
+
+- **Plan:** User clicks the **_“Register here”_** button and is directed to the registration page.
+- **Result:** This test has passed.
+
+**Products Page**
+
+- **Plan:** User clicks on a product and is directed to the product detail.
+- **Result:** This test has passed.
+
+**Product Detail Page**
+
+- **Plan:** User clicks on the **_“Add to bag”_** button and a message container shows on the top of the page with a bag summary and **_“Go to secure checkout”_** button .
+- **Result:** This test has passed.
+
+- **Plan:** User clicks on **_“+”_** or **_“-”_** buttons and the product quantity increment or decrement accordingly.
+- **Result:** This test has passed.
+
+**Products Page - For Superuser**
+
+- **Plan:** Superuser clicks on **_"Add New Product"_** button and is redirected to the add product form.
+- **Result:** This test have passed.
+
+**Add Product Page - For Superuser**
+
+- **Plan:** Superuser fills the form with relevant information, clicks on **_Post_** and a new product is created.
+- **Result:** This test have passed.
+
+**Product Detail Page - For Superuser**
+
+- **Plan 1:** Superuser clicks on **_update_** button and is redirected to the products form with pre-filled information. Superuser changes what is needed and click **_Post_**. Update is saved and superuser is redirected to the products page.
+- **Result:** This test have passed.
+
+- **Plan 2:** Superuser clicks on **_delete_** button and is redirected to the delete product page. If clicks the **_Yes, Delete_** button, the product is deleted. If clicks the **_Cancel_** button is redirected to the products page.
+- **Result:** This test have passed.
+
+**Checkout Page**
+
+- **Plan:** User fills the form with personal information and use credit card number **_4000058260000005_**, MM/YY as **_04/24_**, CVC as **_744_** and post code as **_SW1A 0AA_** to complete a purshase.
+- **Result:** This test has passed.
+
+**Reviews Page - When User isn't Logged In**
+
+- **Plan:** User clicks on **_"Add Review"_** and is redirected to login page.
+- **Result:** This test have passed.
+
+**Reviews Page - When User is Logged In**
+
+- **Plan:** User clicks on **_"Add Review"_** and is redirected to the add review form.
+- **Result:** This test have passed.
+
+**Workshops Page**
+
+- **Plan:** User clicks on the **_Workshop title_** and is redirected to the workshop detail page.
+- **Result:** This test have passed.
+
+**Workshops Page - For Superuser**
+
+- **Plan:** Superuser clicks on **_"Add New Workshop"_** button and is redirected to the add workshop form.
+- **Result:** This test have passed.
+
+**Add Workshops Page - Only for Superuser**
+
+- **Plan:** Superuser fills the form with relevant information, clicks on **_Post_** and a new workshop is created.
+- **Result:** This test have passed.
+
+**Workshop Detail Page - When User is Superuser**
+
+- **Plan 1:** Superuser clicks on **_update_** button and is redirected to the workshop form with pre-filled information. Superuser changes what is needed and click **_Post_**. Update is saved and superuser is redirected to the workshops page.
+- **Result:** This test have passed.
+
+- **Plan 2:** Superuser clicks on **_delete_** button and is redirected to the delete workshop page. If clicks the **_Yes, Delete_** button, the workshops is deleted. If clicks the **_Cancel_** button is redirected to the workshops page.
+- **Result:** This test have passed.
