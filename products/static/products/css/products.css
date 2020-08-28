@@ -60,13 +60,13 @@
 }
 
 .card-bottom {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .delivery {
   background-color: #6a2640;
   color: #ffffff;
-  padding: 5px;
+  padding: 0.3125rem;
 }
 
 .product-details-container {
@@ -78,7 +78,7 @@
 .product-name {
   color: #6a2640;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 1.4375rem;
 }
 
 .product-name-small {
@@ -90,10 +90,10 @@
 
 .product-form {
   background: #f4e6ea;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   border: solid 5px #6a2640;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 1.875rem;
+  margin-bottom: 0.625rem;
   text-align: center;
   width: 85% !important;
 }
@@ -101,12 +101,12 @@
 .product-header {
   color: #6a2640;
   font-weight: 700;
-  padding-top: 30px;
+  padding-top: 1.875rem;
 }
 
 .add-product {
   text-align: left;
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .add-product-btn {
@@ -120,7 +120,7 @@
 }
 
 .product-btn-container {
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 input#id_image.clearablefileinput.form-control-file {
@@ -142,7 +142,7 @@ input#id_image.clearablefileinput.form-control-file {
 
 @media screen and (width: 1024px) {
   .ipad-btn {
-    padding: 4px;
+    padding: 0.25rem;
   }
 }
 
