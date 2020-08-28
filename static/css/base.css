@@ -21,6 +21,10 @@ a {
   font-style: italic;
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 /* Title */
 
 .title {
