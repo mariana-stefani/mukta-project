@@ -28,7 +28,7 @@ a {
   margin: 30px 0;
   text-align: left;
   text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: 700;
   letter-spacing: 3px;
   font-size: 40px;
 }
@@ -39,7 +39,7 @@ a {
   background-color: #ffffff;
   color: #736177;
   border: solid 2px #736177;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 .btn-dark:hover,
@@ -47,7 +47,7 @@ a {
 .btn-dark:focus {
   background: #736177;
   color: #ffffff !important;
-  font-weight: bolder !important;
+  font-weight: 700 !important;
   border: 2px solid #ffffff !important;
 }
 
@@ -55,7 +55,7 @@ a {
   color: #736177 !important;
   background-color: #ffff;
   border: 2px solid #736177;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 .btn-outline-dark:hover,
@@ -63,7 +63,7 @@ a {
 .btn-outline-dark:focus {
   background: #736177;
   color: #ffff !important;
-  font-weight: bolder !important;
+  font-weight: 700 !important;
   border: 1px solid #736177;
 }
 
@@ -97,7 +97,7 @@ a:hover,
 a.links:hover {
   color: #3f8fa8;
   text-decoration: none;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 .text-black {
@@ -150,7 +150,7 @@ a.links:hover {
 
 .dropdown-item {
   color: #ffffff;
-  font-weight: bolder;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -340,7 +340,7 @@ footer {
   background: #736177;
   color: #ffffff;
   border: solid 0.0625rem #ffffff;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 a:link {
@@ -399,7 +399,7 @@ a:link {
   color: #736177;
   background-color: #ffffff;
   border-color: #736177;
-  font-weight: bolder;
+  font-weight: 700;
   border: 2px solid #736177;
 }
 
