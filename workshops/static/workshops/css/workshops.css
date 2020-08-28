@@ -1,19 +1,19 @@
 /* Title */
 .title {
-  margin-top: 50px;
+  margin-top: 3.125rem;
   color: #f3995a;
 }
 
 /* Workshop container */
 
 .workshop-p {
-  font-size: 19px;
+  font-size: 1.1875rem;
   margin-left: 3%;
 }
 
 .workshop-container {
-  margin-top: 30px;
-  padding: 25px;
+  margin-top: 1.875rem;
+  padding: 1.5625rem;
   position: relative;
 }
 
@@ -24,7 +24,7 @@
 .workshop-desc h2,
 h4,
 .content-p {
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .p-title {
@@ -33,8 +33,8 @@ h4,
 }
 
 .workshop-title {
-  padding-bottom: 1px;
-  margin-bottom: 14px;
+  padding-bottom: 0.0625rem;
+  margin-bottom: 0.875rem;
   color: #f3995a !important;
 }
 
@@ -52,7 +52,7 @@ a.workshop-title:hover {
 
 .workshop-divider {
   margin: auto;
-  padding-top: 30px;
+  padding-top: 1.875rem;
   content: " ";
   display: flex;
   border-bottom: 0.09375rem solid #f7b78a;
@@ -62,7 +62,7 @@ a.workshop-title:hover {
 .workshop-box {
   background-color: #fce4d2;
   font-size: smaller;
-  padding: 5px;
+  padding: 0.3125rem;
   width: 150px;
   height: 100px;
   border: solid 1px #f7b78a;
@@ -73,19 +73,19 @@ a.workshop-title:hover {
 .workshop-box p {
   position: relative;
   top: 22%;
-  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
 }
 
 .workshop-btn-container {
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .workshop-form {
   background: #fce4d2;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   border: solid 5px #f3995a;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 1.875rem;
+  margin-bottom: 0.625rem;
   text-align: center;
   width: 85% !important;
 }
@@ -97,7 +97,7 @@ a.workshop-title:hover {
 
 .add-workshop {
   text-align: left;
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .add-workshop-btn {
@@ -125,7 +125,7 @@ a.workshop-title:hover {
 
 .workshop-pages {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .workshop-pages-btn {
@@ -150,7 +150,7 @@ a.workshop-title:hover {
 
 @media screen and (max-width: 414px) {
   .workshop-container {
-    padding: 25px;
+    padding: 1.5625rem;
     position: relative;
   }
 
@@ -164,7 +164,7 @@ a.workshop-title:hover {
   .workshop-box {
     width: 200px !important;
     height: 80px;
-    margin-bottom: 10px !important;
+    margin-bottom: 0.625rem !important;
     vertical-align: middle;
     border: solid 1px #f7b78a;
   }
