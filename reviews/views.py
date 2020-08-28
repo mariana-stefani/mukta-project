@@ -5,6 +5,7 @@ from .models import Review
 
 
 class ReviewListView(ListView):
+    """ A view to display all reviews on the reviews page """
     model = Review
     template_name = 'reviews/reviews.html'
     context_object_name = 'reviews'
@@ -13,6 +14,7 @@ class ReviewListView(ListView):
 
 
 class ReviewCreateView(LoginRequiredMixin, CreateView):
+    """ A view to create a new review on review-form page """
     model = Review
     template_name = 'reviews/review-form.html'
     context_object_name = 'review-create'
@@ -25,12 +27,14 @@ class ReviewCreateView(LoginRequiredMixin, CreateView):
 
 
 class ReviewDetailView(DetailView):
+    """ A view to display a single review on review-detail page """
     model = Review
     template_name = 'reviews/review-detail.html'
     context_object_name = 'review-detail'
 
 
 class ReviewUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """ A view to update a review on review-form page """
     model = Review
     fields = ['title', 'content']
     template_name = 'reviews/review-form.html'
@@ -51,6 +55,7 @@ class ReviewUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
 
 class ReviewDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """ A view to delete a review on review-delete page """
     model = Review
     template_name = 'reviews/review-delete.html'
     context_object_name = 'review-delete'
@@ -64,6 +69,7 @@ class ReviewDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
 
 class ReviewUserView(ListView):
+    """ A view to display all reviews from user on user-reviews page """
     model = Review
     context_object_name = 'reviews'
     template_name = 'reviews/user-reviews.html'
