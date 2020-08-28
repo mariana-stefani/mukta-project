@@ -1,5 +1,5 @@
 /**
- * Change country field color 
+ * Change country field color
  */
 let countrySelected = $("#id_default_country").val();
 if (!countrySelected) {
