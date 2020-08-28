@@ -4,6 +4,8 @@
   color: #655669;
 }
 
+/* Index */
+
 .inner-index {
   padding: 30px 320px !important;
   margin: auto;
@@ -67,7 +69,7 @@
   margin-top: 0;
 }
 
-/* Media Queries */
+/* Media queries */
 
 @media screen and (max-width: 414px) {
   .inner-index {
