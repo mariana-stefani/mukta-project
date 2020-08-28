@@ -86,12 +86,12 @@ View my wireframes [here](#).
 
 ### Database Choice:
 
-- During development of this project I worked with the standard **sqlite3** database that comes installed with Django.
+- During the development of this project, I worked with the standard **sqlite3** database that comes installed with Django.
 - In the production version of Mukta - Yoga and Wellbeing, the database is a **PostgreSQL** database, hosted and provided by **Heroku**.
 
 ### Mukta Yoga and Wellbeing Data Models:
 
-The user model used in this project is provided by Django. You can find more informtaion about this [here](https://docs.djangoproject.com/en/3.0/ref/contrib/auth/)
+The user model used in this project is provided by Django. You can find more information about this [here](https://docs.djangoproject.com/en/3.0/ref/contrib/auth/)
 
 #### The Order Model
 
@@ -232,7 +232,7 @@ The technologies used were:
 
 **Navbar Links**
 
-- **Plan:** User clicks on each navbar link and is directed to chosen page.
+- **Plan:** User clicks on each navbar link and is directed to the chosen page.
 - **Result:** This test passed.
 
 **Registration Page**
@@ -242,12 +242,12 @@ The technologies used were:
 
 **Login Page**
 
-- **Plan:** After clicking on the verification link on the e-mail, the user can login with username or e-mail and password and is directed to the idex page.
+- **Plan:** After clicking on the verification link on the e-mail, the user can log in with username or e-mail and password and is directed to the index page.
 - **Result:** This test passed.
 
 **My Profile Page - When User is Logged In**
 
-- **Plan:** If the user have purshased someting in the past, they will have their order gistory and their details displayed.
+- **Plan:** If the user has purchased something in the past, they will have their order history and their details displayed.
 - **Result:** This test has passed.
 
 **Products Button**
@@ -272,71 +272,71 @@ The technologies used were:
 
 **Product Detail Page**
 
-- **Plan:** User clicks on the **_“Add to bag”_** button and a message container shows on the top of the page with a bag summary and **_“Go to secure checkout”_** button .
+- **Plan:** User clicks on the **_“Add to bag”_** button and a message container shows on the top of the page with a bag summary and **_“Go to secure checkout”_** button.
 - **Result:** This test has passed.
 
-- **Plan:** User clicks on **_“+”_** or **_“-”_** buttons and the product quantity increment or decrement accordingly.
+- **Plan:** User clicks on the **_“+”_** or **_“-”_** buttons and the product quantity increment or decrement accordingly.
 - **Result:** This test has passed.
 
 **Products Page - For Superuser**
 
-- **Plan:** Superuser clicks on **_"Add New Product"_** button and is redirected to the add product form.
-- **Result:** This test have passed.
+- **Plan:** Superuser clicks on the **_"Add New Product"_** button and is redirected to the add product form.
+- **Result:** This test has passed.
 
 **Add Product Page - For Superuser**
 
 - **Plan:** Superuser fills the form with relevant information, clicks on **_Post_** and a new product is created.
-- **Result:** This test have passed.
+- **Result:** This test has passed.
 
 **Product Detail Page - For Superuser**
 
-- **Plan 1:** Superuser clicks on **_update_** button and is redirected to the products form with pre-filled information. Superuser changes what is needed and click **_Post_**. Update is saved and superuser is redirected to the products page.
-- **Result:** This test have passed.
+- **Plan 1:** Superuser clicks on the **_update_** button and is redirected to the products form with pre-filled information. Superuser changes what is needed and click **_Post_**. The update is saved and superuser is redirected to the products page.
+- **Result:** This test has passed.
 
-- **Plan 2:** Superuser clicks on **_delete_** button and is redirected to the delete product page. If clicks the **_Yes, Delete_** button, the product is deleted. If clicks the **_Cancel_** button is redirected to the products page.
-- **Result:** This test have passed.
+- **Plan 2:** Superuser clicks on the **_delete_** button and is redirected to the delete product page. If clicks the **_Yes, Delete_** button, the product is deleted. If clicks the **_Cancel_** button is redirected to the products page.
+- **Result:** This test has passed.
 
 **Checkout Page**
 
-- **Plan:** User fills the form with personal information and use credit card number **_4000058260000005_**, MM/YY as **_04/24_**, CVC as **_744_** and post code as **_SW1A 0AA_** to complete a purshase.
+- **Plan:** User fills the form with personal information and uses the credit card number **_4000058260000005_**, MM/YY as **_04/24_**, CVC as **_744_** and postcode as **_SW1A 0AA_** to complete a purchase.
 - **Result:** This test has passed.
 
 **Reviews Page - When User isn't Logged In**
 
-- **Plan:** User clicks on **_"Add Review"_** and is redirected to login page.
-- **Result:** This test have passed.
+- **Plan:** User clicks on the **_"Add Review"_** and is redirected to the login page.
+- **Result:** This test has passed.
 
 **Reviews Page - When User is Logged In**
 
-- **Plan:** User clicks on **_"Add Review"_** and is redirected to the add review form.
-- **Result:** This test have passed.
+- **Plan:** User clicks on the **_"Add Review"_** and is redirected to the add review form.
+- **Result:** This test has passed.
 
 **Workshops Page**
 
 - **Plan:** User clicks on the **_Workshop title_** and is redirected to the workshop detail page.
-- **Result:** This test have passed.
+- **Result:** This test has passed.
 
 **Workshops Page - For Superuser**
 
-- **Plan:** Superuser clicks on **_"Add New Workshop"_** button and is redirected to the add workshop form.
-- **Result:** This test have passed.
+- **Plan:** Superuser clicks on the **_"Add New Workshop"_** button and is redirected to the add workshop form.
+- **Result:** This test has passed.
 
 **Add Workshops Page - Only for Superuser**
 
 - **Plan:** Superuser fills the form with relevant information, clicks on **_Post_** and a new workshop is created.
-- **Result:** This test have passed.
+- **Result:** This test has passed.
 
 **Workshop Detail Page - When User is Superuser**
 
-- **Plan 1:** Superuser clicks on **_update_** button and is redirected to the workshop form with pre-filled information. Superuser changes what is needed and click **_Post_**. Update is saved and superuser is redirected to the workshops page.
-- **Result:** This test have passed.
+- **Plan 1:** Superuser clicks on the **_update_** button and is redirected to the workshop form with pre-filled information. Superuser changes what is needed and click **_Post_**. The update is saved and superuser is redirected to the workshops page.
+- **Result:** This test has passed.
 
-- **Plan 2:** Superuser clicks on **_delete_** button and is redirected to the delete workshop page. If clicks the **_Yes, Delete_** button, the workshops is deleted. If clicks the **_Cancel_** button is redirected to the workshops page.
-- **Result:** This test have passed.
+- **Plan 2:** Superuser clicks on the **_delete_** button and is redirected to the delete workshop page. If clicks the **_Yes, Delete_** button, the workshop is deleted. If clicks the **_Cancel_** button is redirected to the workshops page.
+- **Result:** This test has passed.
 
 ## Note for the assessor
 
-To test the CRUDs functionalities as **normal user**:
+To test the CRUDs functionalities as a **normal user**:
 
 | **Username** | **Password** |
 | ------------ | ------------ |
@@ -388,7 +388,7 @@ To purchase a product, use the information below:
   - [PIP](https://pip.pypa.io/en/stable/installing/)
   - [Python 3](https://www.python.org/downloads/)
 
-- You'll also **must** create an account on [Stripe](https://stripe.com/).
+- You also **must** create an account on [Stripe](https://stripe.com/).
 
 - This project was developed using [Visual Studio Code](https://code.visualstudio.com/) IDE and cloned to a [Git Repository](https://github.com/mariana-stefani/mukta-project).
 
