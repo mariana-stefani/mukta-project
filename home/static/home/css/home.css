@@ -7,7 +7,7 @@
 /* Index */
 
 .inner-index {
-  padding: 30px 320px !important;
+  padding: 1.875rem 20rem !important;
   margin: auto;
   text-align: left !important;
 }
@@ -21,25 +21,25 @@
   width: 310px;
   height: 320px;
   margin: auto;
-  padding: 25px 0;
+  padding: 1.5625rem 0;
 }
 
 .index-p {
-  padding-top: 55px;
+  padding-top: 3.4375rem;
   position: relative;
   justify-content: center;
   margin: auto;
-  font-size: 19px;
+  font-size: 1.1875rem;
   line-height: 1.8;
 }
 
 .index-title {
-  margin-bottom: 30px !important;
+  margin-bottom: 1.875rem !important;
 }
 
 .index-h1 {
   justify-content: left;
-  padding-left: 30px;
+  padding-left: 1.875rem;
 }
 
 .background-index {
@@ -73,12 +73,12 @@
 
 @media screen and (max-width: 414px) {
   .inner-index {
-    padding: 15px !important;
+    padding: 0.9375rem !important;
   }
 
   .index-p {
-    padding-top: 10px;
-    font-size: 16px;
+    padding-top: 0.625rem;
+    font-size: 1rem;
   }
 
   .index-img {
@@ -90,17 +90,17 @@
 
 @media screen and (min-width: 415px) and (max-width: 1400px) {
   .inner-index {
-    padding: 30px 100px !important;
+    padding: 1.875rem 6.25rem !important;
   }
 }
 
 @media screen and (max-width: 991px) {
   .index-p {
-    padding-top: 30px 100px;
+    padding-top: 1.875rem 6.25rem;
   }
 
   .index-img {
     height: 275px;
-    padding: 40px 0;
+    padding: 2.5rem 0;
   }
 }
