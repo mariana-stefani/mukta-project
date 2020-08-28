@@ -1,13 +1,13 @@
 /* Title */
 
 .title {
-  margin-top: 50px;
+  margin-top: 3.125rem;
   color: #3f8fa8;
 }
 
 .title-divider {
-  padding-bottom: 1px;
-  margin-bottom: 14px;
+  padding-bottom: 0.0625rem;
+  margin-bottom: 0.875rem;
   border-bottom: 1px solid #3f8fa8;
   color: #2a5f70;
 }
@@ -15,7 +15,7 @@
 /* Review Container */
 
 .reviews-p {
-  font-size: 19px;
+  font-size: 1.1875rem;
   margin-left: 3%;
   line-height: 2;
 }
@@ -31,13 +31,13 @@
 
 .reviews-container {
   background: #dcecf2;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   border: solid 5px #3f8fa8;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 1.875rem;
+  margin-bottom: 0.625rem;
   text-align: center;
   width: 65%;
-  padding: 30px 0 15px 0;
+  padding: 1.875rem 0 0.9375rem 0;
 }
 
 /* Form Content */
@@ -55,7 +55,7 @@
   color: #3f8fa8;
   border: solid 2px #3f8fa8;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .add-review-btn:hover {
@@ -67,7 +67,7 @@
 
 .add-review-container {
   text-align: left;
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .single-review {
@@ -94,7 +94,7 @@
 
 .reviews-pages {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .reviews-pages-btn {
