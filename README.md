@@ -474,4 +474,4 @@ $ git push
 
 ## Acknowledgements
 
-All my gratitude to my **wonderful husband** and **family**. I couldn't have done without your support! A big thank you to my mentor [**Simen Daehlin**](https://github.com/Eventyret) for your ideas, advise and support! Thank you to [**Miklos Sarosi**](https://github.com/Sarosim), [**Michael Park**](https://github.com/mparkcode) and [**Scott Kipp**](https://github.com/ShavingSeagull). Thank you to everyone from **Code Institute**!
+All my gratitude to my **wonderful husband** and **family**. I couldn't have done without your support! A big thank you to my mentor [**Simen Daehlin**](https://github.com/Eventyret) for your ideas, advise and support! Thank you to [**Miklos Sarosi**](https://github.com/Sarosim), [**Michael Park**](https://github.com/mparkcode),[**Scott Kipp**](https://github.com/ShavingSeagull) and [**Tim Nelson**](https://github.com/TravelTimN) from Code Institute for your time and assistance. Thank you to everyone from **Code Institute**!
