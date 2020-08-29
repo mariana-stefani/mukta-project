@@ -1,5 +1,7 @@
 # Mukta - Yoga and Wellbeing
 
+![Responsiveness across devices](static/images/portfolio.png)
+
 ## Introduction
 
 [This is Mukta](https://mukta-project.herokuapp.com/) - Yoga and Wellbeing. An e-commerce website developed by Mariana Stefani. This website is for everyone who is after great quality wellbeing and yoga products.
@@ -296,7 +298,7 @@ The technologies used were:
 - **Plan 2:** Superuser clicks on the **_delete_** button and is redirected to the delete product page. If clicks the **_Yes, Delete_** button, the product is deleted. If clicks the **_Cancel_** button is redirected to the products page.
 - **Result:** This test has passed.
 
-**Checkout Page**
+**Checkout Page (using the STRIPE API)**
 
 - **Plan:** User fills the form with personal information and uses the credit card number **_4000058260000005_**, MM/YY as **_04/24_**, CVC as **_744_** and postcode as **_SW1A 0AA_** to complete a purchase.
 - **Result:** This test has passed.
