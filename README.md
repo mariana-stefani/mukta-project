@@ -31,9 +31,9 @@ Users will have the possibility to register on the website, choose products in t
 
 #### **Site Owner Goals:**
 
-As an admin user:
+As a superuser:
 
-- I expect to be able to log in as a superuser and create, update and delete workshops and events on the website.
+- I expect to be able to log in as a superuser and create, update and delete products and workshops on the website.
 - I expect to provide users with a safe and secure e-commerce platform.
 - I expect to encourage users to register on the site, so they will have access to the best yoga and wellbeing workshops taking place in London.
 - I need to be able to attract attention to my products.
@@ -48,6 +48,7 @@ As an admin user:
 - Add products to the shopping cart and update the basket amounts.
 - Buy items in the shopping cart in a safely and securely.
 - View past orders and user details on my profile section.
+- Add, edit and delete reviews.
 
 **Expectations:**
 
@@ -74,8 +75,12 @@ View my wireframes [here](https://github.com/mariana-stefani/mukta-project/tree/
 - A 'my reviews' page where users can create, edit, delete a review as well as read their past reviews.
 - A search bar that displays the website products based on the users' search query.
 - A products page where users can click on the item and will be directed to the product details page.
+- A product details page, where users can read the product description and manage the quantities to add to bag. If I'm a superuser I can add, edit and delete a product by clicking on respective buttons.
 - A shopping cart where users can add the products they would like to purchase and update their quantities.
-- A 'checkout' page where users can pay for their chosen items using the Stripe API which will process the payment details and place their order.
+- A 'checkout' page, where users can pay for their chosen items using the Stripe API which will process the payment details and place their order.
+- A workshop page, where users can find yoga and wellbeing workshops in London.
+- A workshop details page, where users can read all information about that workshop. If I'm a superuser I can add, edit and delete a workshop by clicking on respective buttons.
+- A contact page, where users can find Mukta's office address, e-mail and telephone number. There's also a map with the office location.
 
 ### Features Left to implement
 
@@ -83,6 +88,7 @@ View my wireframes [here](https://github.com/mariana-stefani/mukta-project/tree/
 - Create a 'contact us' form.
 - Users can register with their social media accounts.
 - A reset password link.
+- Order confirmation emails to be sent to the customer when customer places an order.
 
 ## Information Architecture
 
@@ -136,16 +142,16 @@ The user model used in this project is provided by Django. You can find more inf
 
 #### The Product Model
 
-| _Title_     | _Key in DB_ | _Form Validation type_                                        | _Data Type_  |
-| ----------- | ----------- | ------------------------------------------------------------- | ------------ |
-| Category    | category    | 'Category', null=True, blank=True, on_delete=models.SET_NULL  | ForeignKey   |
-| SKU         | sku         | max_length=254, null=True, blank=True                         | CharField    |
-| Name        | name        | max_length=254                                                | CharField    |
-| Description | description | max_length=1000                                               | TextField    |
-| Has Option  | has_option  | default=False, null=True, blank=True                          | BooleanField |
-| Price       | price       | max_digits=6, decimal_places=2                                | DecimalField |
-| Image URL   | image_url   | max_length=1024, null=True, blank=True                        | URLField     |
-| Image       | image       | null=True, blank=True                                         | ImageField   |
+| _Title_     | _Key in DB_ | _Form Validation type_                                       | _Data Type_  |
+| ----------- | ----------- | ------------------------------------------------------------ | ------------ |
+| Category    | category    | 'Category', null=True, blank=True, on_delete=models.SET_NULL | ForeignKey   |
+| SKU         | sku         | max_length=254, null=True, blank=True                        | CharField    |
+| Name        | name        | max_length=254                                               | CharField    |
+| Description | description | max_length=1000                                              | TextField    |
+| Has Option  | has_option  | default=False, null=True, blank=True                         | BooleanField |
+| Price       | price       | max_digits=6, decimal_places=2                               | DecimalField |
+| Image URL   | image_url   | max_length=1024, null=True, blank=True                       | URLField     |
+| Image       | image       | null=True, blank=True                                        | ImageField   |
 
 #### The UserProfile Model
 
@@ -163,12 +169,12 @@ The user model used in this project is provided by Django. You can find more inf
 
 #### The Review Model
 
-| _Title_     | _Key in DB_ | _Form Validation type_          | _Data Type_   |
-| ----------- | ----------- | ------------------------------- | ------------- |
-| User        | user        | User, on_delete=models.CASCADE  | ForeignKey    |
-| Title       | title       | max_length=30                   | CharField     |
-| Content     | content     | max_length=200                  | TextField     |
-| Date Posted | date_posted | default=timezone.now            | DateTimeField |
+| _Title_     | _Key in DB_ | _Form Validation type_         | _Data Type_   |
+| ----------- | ----------- | ------------------------------ | ------------- |
+| User        | user        | User, on_delete=models.CASCADE | ForeignKey    |
+| Title       | title       | max_length=30                  | CharField     |
+| Content     | content     | max_length=200                 | TextField     |
+| Date Posted | date_posted | default=timezone.now           | DateTimeField |
 
 #### The Workshop Model
 
@@ -213,7 +219,6 @@ The technologies used were:
 - [Heroku](http://www.heroku.com)
 - [Moqups](https://moqups.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [Pixabay](https://pixabay.com/)
 
 ### Databases:
 
@@ -384,7 +389,7 @@ To purchase a product, use the information below:
 
 - The following **must** be installed in your machine:
 
-  - [Homebrew](https://docs.brew.sh/Installation) 
+  - [Homebrew](https://docs.brew.sh/Installation)
   - [Git](https://www.atlassian.com/git/tutorials/install-git)
   - [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
   - [PIP](https://pip.pypa.io/en/stable/installing/)
@@ -396,9 +401,9 @@ To purchase a product, use the information below:
 
 - To clone a **Github** repository:
 
-    * Open the [repository](https://github.com/mariana-stefani/mukta-project) on **Github** and click on ***"Clone or download"*** and copy the URL.
+  - Open the [repository](https://github.com/mariana-stefani/mukta-project) on **Github** and click on **_"Clone or download"_** and copy the URL.
 
-    * On VSCode open the ***"Command Palette"***, select ***"Git: Clone"*** and paste the URL.
+  - On VSCode open the **_"Command Palette"_**, select **_"Git: Clone"_** and paste the URL.
 
 - Install Pipenv Globally:
   _ If needed, upgrade pip from your computer's terminal by running `$ python3.8 -m pip install pip --upgrade`.
@@ -410,14 +415,14 @@ To purchase a product, use the information below:
     _ Initialize the Virtual Environment: `$ cd ~/Projects/Mukta`.
     _ Activate the Virtual Environment: `$ pipenv shell`.
     _ On VSCode dialogue will be shown asking if you'd like to select this new virtual environment for the workspace folder. Click yes.
-    _ Open the **"Command Palette"** and select **_"Python: Select Interpreter"_**. 
-    _ Select the virtual environment that you just created.
+    _ Open the **"Command Palette"** and select **_"Python: Select Interpreter"_**.
+    \_ Select the virtual environment that you just created.
 - Install the necessary libraries by running `$ pip3 install -r requirements.txt` from VSCode terminal.
 - Create a file called **_"env.py"_** and store your **_SECRET_KEY_** variable; your **_DATABASE_URL_** to link to your database; the **_STRIPE_PUBLIC_KEY_**, THE **_STRIPE_SECRET_KEY_** and **_STRIPE_WH_SECRET_** for **Stripe**; the **_AWS_ACCESS_KEY_ID_** and **_AWS_SECRET_ACESS_KEY_** for **AWS S3** and **_EMAIL_HOST_USER_** and **_EMAIL_HOST_PASS_** for the confirmation emails.
-  - Do not commit this file to **Git**. 
+  - Do not commit this file to **Git**.
   - To hide your environment variables, create a file called **_".gitignore"_** and write **_"env.py"_** on this file.
 - Enter the following command in the terminal to migrate models into the database: `$ python3 manage.py migrate`
-- Create a *superuser* by entering `$ python3 manage.py createsuperuser`
+- Create a _superuser_ by entering `$ python3 manage.py createsuperuser`
 - Run your application with the command `$ python3 manage.py runserver`.
 - The project can be viewed at **_Http://127.0.0.1:8000_**.
 
@@ -442,7 +447,7 @@ $ git push
 8. Add the following config vars:
 
 | _KEY_                 | _VALUE_                          |
-|-----------------------|----------------------------------|
+| --------------------- | -------------------------------- |
 | AWS_ACCESS_KEY_ID     | <your_aws_access_key_id>         |
 | AWS_SECRET_ACCESS_KEY | <your_aws_secret_key_access_key> |
 | DATABASE_URL          | <your_database_url>              |
@@ -454,9 +459,19 @@ $ git push
 | STRIPE_WH_SECRET      | <your_stripe_wh_secret>          |
 | USE_AWS               | True                             |
 
-
 6. On VSCode terminal run the command `$ heroku login` to log in to your account.
 7. Link **Heroku** to **Git** with the following by running `$ heroku git:remote -a <yourproject>`.
 8. Deploy your project to **Heroku** by running `$ git push heroku master`.
 9. Your project is now successfully deployed to **Heroku**.
 10. On your **Heroku** dashboard click on the button **_Open app_** on the top right side to view your deployed project.
+
+## Credits
+
+### Media
+
+- Responsiveness across devices image from [Techsini](https://techsini.com/multi-mockup).
+- The images used on this project were from [Pixabay](https://pixabay.com/)
+
+## Acknowledgements
+
+All my gratitude to my **wonderful husband** and **family**. I couldn't have done without your support! A big thank you to my mentor [**Simen Daehlin**](https://github.com/Eventyret) for your ideas, advise and support! Thank you to [**Miklos Sarosi**](https://github.com/Sarosim), [**Michael Park**](https://github.com/mparkcode) and [**Scott Kipp**](https://github.com/ShavingSeagull). Thank you to everyone from **Code Institute**!
