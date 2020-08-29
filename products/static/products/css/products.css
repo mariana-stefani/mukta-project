@@ -123,7 +123,7 @@
   margin-top: 1.875rem;
 }
 
-input#id_image.clearablefileinput.form-control-file {
+input#id_image {
   background-color: #ffffff;
 }
 
