@@ -161,12 +161,12 @@ The user model used in this project is provided by Django. You can find more inf
 
 #### The Review Model
 
-| _Title_     | _Key in DB_ | _Form Validation type_         | _Data Type_   |
-| ----------- | ----------- | ------------------------------ | ------------- |
-| User        | user        | User, on_delete=models.CASCADE | ForeignKey    |
-| Title       | title       | max_length=10                  | CharField     |
-| Content     | content     | max_length=45                  | TextField     |
-| Date Posted | date_posted | default=timezone.now           | DateTimeField |
+| _Title_     | _Key in DB_ | _Form Validation type_          | _Data Type_   |
+| ----------- | ----------- | ------------------------------- | ------------- |
+| User        | user        | User, on_delete=models.CASCADE  | ForeignKey    |
+| Title       | title       | max_length=30                   | CharField     |
+| Content     | content     | max_length=120                  | TextField     |
+| Date Posted | date_posted | default=timezone.now            | DateTimeField |
 
 #### The Workshop Model
 
