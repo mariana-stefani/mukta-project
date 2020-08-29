@@ -1,6 +1,6 @@
 # Mukta - Yoga and Wellbeing
 
-![Responsiveness across devices](static/images/portfolio.png)
+![Responsiveness across devices](media/Mukta.png)
 
 ## Introduction
 
