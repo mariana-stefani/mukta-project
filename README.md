@@ -59,7 +59,7 @@ As an admin user:
 ## Wireframes
 
 The wireframes for this project were created at [Moqups](https://moqups.com/).
-View my wireframes [here](#).
+View my wireframes [here](https://github.com/mariana-stefani/mukta-project/tree/master/wireframes).
 
 ## Features
 
